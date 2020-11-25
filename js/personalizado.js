@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         eventClick: function (info) {
             info.jsEvent.preventDefault(); // don't let the browser navigate
-            
+
             $('#visualizar #id').text(info.event.id);
             $('#visualizar #title').text(info.event.title);
             $('#visualizar #start').text(info.event.start.toLocaleString());
@@ -66,3 +66,24 @@ function DataHora(evento, objeto) {
         event.returnValue = false;
     }
 }
+
+$(document).ready(function () {
+    $("#addevent").on("submit", function (event) {
+        event.preventDefault();
+       $.ajax({
+            method: "POST",
+            url: "cad_event.php",
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function (retorna) {
+                if (retorna['sit']) {
+                    //$("#msg-cad").html(retorna['msg']);
+                    location.reload();
+                } else {
+                    $("#msg-cad").html(retorna['msg']);
+                }
+            }
+        })
+    });
+});

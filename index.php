@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +21,12 @@
         <script src="js/personalizado.js"></script>
     </head>
     <body>
-
+        <?php
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
         <div id='calendar'></div>
 
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -34,13 +42,13 @@
                         <dl class="row">
                             <dt class="col-sm-3">ID</dt>
                             <dd class="col-sm-9" id="id"></dd>
-                            
+
                             <dt class="col-sm-3">Título</dt>
                             <dd class="col-sm-9" id="title"></dd>
-                            
+
                             <dt class="col-sm-3">Início</dt>
                             <dd class="col-sm-9" id="start"></dd>
-                            
+
                             <dt class="col-sm-3">Fim</dt>
                             <dd class="col-sm-9" id="end"></dd>
                         </dl>
@@ -59,7 +67,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <span id="msg-cad"></span>
+                        <form id="addevent" method="POST" enctype="multipart/form-data">
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Título</label>
                                 <div class="col-sm-10">
@@ -99,7 +108,7 @@
 
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <input type="button" name="CadEvent" id="CadEvent" value="Cadastrar Evento ou Board Game" class="btn btn-success">
+                                    <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar Evento ou Board Game</button>                                    
                                 </div>
                             </div>
                         </form>
