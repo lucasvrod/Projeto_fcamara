@@ -23,10 +23,11 @@ session_start();
 </head>
 
 <body>
+    
     <header class="header">
         <nav class="navbar navbar-dark default-color ">
-            <div class="heander_nav_img">
-                <a href="index_fila.php">
+            <div id="img_logo">
+                <a href="index_fila.php" >
                     <div class="logo">
                         <img src="img/LOGO_COMPLETA.png" alt="FIFO Logo">
                     </div>
@@ -34,7 +35,7 @@ session_start();
             </div>    
 
             <form class="form-inline my-2 my-lg-0 ml-auto menu_form">
-                <a href="calendario.php" class="button" >Board Games</a>
+                <!--<a href="calendario.php" class="button" >Board Games</a>-->
                 <a href="" class="button" data-toggle="modal" data-target="#modal_editar_perfil">EDITAR PERFIL </a>
                 <a href="" class="button" data-toggle="modal" data-target="#modal_da_sair_fila">SAIR</a>
             </form>
@@ -43,15 +44,14 @@ session_start();
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="textoH2">
+                        <div id="texto_header">
                             <H2>OLÁ, MARCOS. <br>SEJA BEM VINDO!</H2>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="header_img_usuario" >
-                            <img src="img/teste.png" alt="..." >
-                        </div>
+                        <img src="img/teste.png" id="perfil" alt="">
+                        
                     </div>
                 </div>
             </div>

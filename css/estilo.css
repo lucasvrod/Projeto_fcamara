@@ -1,3 +1,19 @@
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -7,25 +23,26 @@
     linear-gradient(0deg, #FE662E, #FE662E);
     width: auto;
     height: 630px;
-    left: 0px;
-    top: 0px;
+    padding: 0 8% 0 8%;
 }
-.header_img_usuario{
-    position: absolute;
-    width: 367px;
-    height: 386px;
-    left:0;
-    top: -90px;
-    padding-left: 150px;
-    padding-right: 100px;
+#img_logo{
+    margin: -7% 0 0 -8%; 
 }
-.textoH2{
-    padding: 115px 0 18px 99px;
+#texto_header{
+    padding-top: 25%;
+    margin-left: -2.5%;
 }
-.heander_nav_img{        
-    margin: -200px 0 -50px 25px; 
-    padding:36px 0 0 0; 
+
+img#perfil{
+    position: relative;
+    width: 350px;
+    height: 369px;
+    margin-top: -12%;
+    margin-left: 35%;
+    margin-right: 0;
 }
+
+
 .menu_form{
     color: #fff;
     text-decoration:none;
@@ -62,7 +79,6 @@ H1{
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
-    
 }
 
 H2{
@@ -85,7 +101,6 @@ h6{
     color: #000;
 } 
 
-
 h5{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -95,10 +110,9 @@ h5{
     text-align: center;
 
 }
-
 .texto_fila{
     margin: 100px 0 -80px -30px;
-}
+} 
 
 .cor_prin_01_texto{
     color: #36357E;
@@ -109,9 +123,6 @@ h5{
 .cor_prin_02_conteudo{
     background: #FE5517;
 }
-
-
-
 
 .espaco_card{
     margin: 0 0 56px 30px;
@@ -124,24 +135,18 @@ h5{
     border-radius: 20px 20px 20px 20px;
 }
 .card_img{
-    
     width: 238.34px;
     height: 274.89px;
     border-radius: 25px 0 0 25px;
     margin: -1px 0 0 -5px;
     max-width: 220px;
     max-height: 255px;
-   
-
-    
 }
 .card_titulo{
     margin: -15px 0 10px 19px;   
 }
 .card_subtitulo{
-    
     margin: -12px 0 31px 19.18px;
-    
 }
 
 .card_numero_fila{
@@ -167,7 +172,6 @@ h5{
     text-decoration: underline ;
     color: #000;   
 }
-
 
 .button_fila{
     background-color: #FE5517;
@@ -213,6 +217,7 @@ footer{
     background: #36357e;
     color: #fff;
 }
+
 .modal_tamanho_botao{
     height: 48px;
     width: 170px;
@@ -231,3 +236,4 @@ footer{
 .modal_texto{
     margin: 10px 0 10px 0;
 }
+
