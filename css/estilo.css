@@ -42,7 +42,6 @@ img#perfil{
     margin-right: 0;
 }
 
-
 .menu_form{
     color: #fff;
     text-decoration:none;
@@ -87,6 +86,18 @@ H2{
     font-family:'Montserrat', sans-serif bold;
     font-weight: bold;
 }
+
+H3{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 H4{
     font-family:'Montserrat', sans-serif bold;
     font-weight: bold;
@@ -102,20 +113,22 @@ h6{
 } 
 
 h5{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    font-family: 'Montserrat', sans-serif bold;
+    font-style: bold;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
 
 }
-.texto_fila{
-    margin: 100px 0 -80px -30px;
-} 
 
+
+.texto_fila{
+    margin: 5% 0 0 1%;
+} 
 .cor_prin_01_texto{
     color: #36357E;
+
 }
 .cor_prin_02_texto{
     color: #FE5517;
@@ -124,51 +137,55 @@ h5{
     background: #FE5517;
 }
 
-.espaco_card{
-    margin: 0 0 56px 30px;
+.espaco_grid{
+    margin: 0 8% 0 8%;
 }
 
-.card{
-    width: 580.3px;
-    height: 255px;
+.card_fila{
+    width: 48%;
+    height: 20%;
     background: #A8A8D0;
     border-radius: 20px 20px 20px 20px;
+    margin-right: 2%;
 }
+
 .card_img{
-    width: 238.34px;
-    height: 274.89px;
-    border-radius: 25px 0 0 25px;
-    margin: -1px 0 0 -5px;
-    max-width: 220px;
-    max-height: 255px;
+    width: 120%;
+    height: 100.5%;  
+    border-radius: 20px 0 0 20px;
+    margin-top: -1px;
+    margin-left: -1px;
+    position: absolute;
+    box-shadow: 3px 3px 3px #616161 ;
+    -moz-box-shadow: 3px 3px 3px #616161;
 }
+
 .card_titulo{
-    margin: -15px 0 10px 19px;   
-}
-.card_subtitulo{
-    margin: -12px 0 31px 19.18px;
+    margin: -4% 0 3% 10%;    
 }
 
 .card_numero_fila{
-    padding: 0 0 0 118px;
-    margin: -10px 5px 0 0;
+    padding-left: 34%;
 }
 
 .card_conteudo_fila{
-    margin: -60px 5px 30px 50px; 
+    margin-top: -30%;
+    margin-left: 26%; 
+    
 }
 
 .card_button{
-    text-align: center;
+    padding-left: 24%;
+    padding-top: 5%;
 }
 
 .card_detalhe_icone{
     padding: 0 0 0 86.6px;
-    margin: -23px -10px 0 0;
+    margin: -7% -10px 0 0;
     }
 
 .card_detalhe_texto{
-    margin: -49px 0 0 29px;
+    margin: -22% 0 0 13%;
     text-decoration: underline ;
     color: #000;   
 }
@@ -179,22 +196,37 @@ h5{
     text-decoration:none;
     border-radius: 4px;
     text-align: center; 
-    height: 40.21px;
-    width: 185.32px;
-    left: 0px;
-    top: 0px;
+    height: 10%;
+    width: 85%;
+
 }
 .button_fila:hover{
     background-color: #B93200;
     color: #fff;
-    text-decoration: none;
-    height: 40.21px;
-    width: 185.32px;
-    left: 0px;
-    top: 0px;
-    border-radius: 4px;
-    text-align: center; 
 }
+
+
+.calendario{
+    margin: 30% 0 0 0;
+
+}
+.calendario_img{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    max-width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #121225;
     height: 336,18px;

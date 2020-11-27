@@ -41,22 +41,26 @@ session_start();
             </form>
 
         </nav>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="texto_header">
-                            <H2>OLÁ, MARCOS. <br>SEJA BEM VINDO!</H2>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <img src="img/teste.png" id="perfil" alt="">
-                        
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="texto_header">
+                        <H2>OLÁ, MARCOS. <br>SEJA BEM VINDX!</H2>
                     </div>
                 </div>
+
+                <div class="col-md-6">
+                    <img src="img/teste.png" id="perfil" alt="">
+                    
+                </div>
             </div>
-    <div class="container">
-        <div class="col-md-12">
+        </div>
+    </header>
+
+
+
+    <div class="container ">
+        <div class="col-md-12" >
             <div class="texto_fila">
                 <H4 align="left" class="cor_prin_02_texto">ENTRE NA FILA E COMECE A JOGAR!</H2>
                 <p align="left">A FCÂMARA OFERECE UMA VARIEDADE DE JOGOS PARA AJUDAR NA ROTINA <br>
@@ -67,168 +71,170 @@ session_start();
     </div>
 
 
-    <section class="featured-places" id="blog">
-
+   
+    <div class="espaco_grid">
         <div class="container-fluid">
             <div class="row">
-                <div class="espaco_card">
-                    <div class="card mb-3 " >
-                        <div class="row no-gutters">
-                            
-                            <div class="col-md-4 ">
-                                <img src="img/fila/fila_videogame.jpg" class="card_img" alt="...">
-                            </div>
-                        
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <H4 class="card_titulo">VIDEOGAME 01</H4>
-                                    <h6 class="card_subtitulo">sala de descompressão</h6>
 
-                                    <div class="card_numero_fila">
-                                        <H1><span class="">4 </span></H1>
-                                        <div class="card_conteudo_fila">
+                <div class="card mb-3 card_fila" >
+                    <div class="row no-gutters">
+                        
+                        <div class="col-md-4 ">
+                            <img src="img/fila/fila_videogame.jpg" class="card_img" alt="...">
+                        </div>
+                    
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                
+                                <H4 class="card_titulo">VIDEOGAME 01 </H4>
+                                <h6 class="card_titulo">sala de descompressão</h6>
+                                
+                                <div class="card_numero_fila">
+                                    <H1><span class="">4 </span></H1>
+                                    <div class="card_conteudo_fila">
                                         <span>PESSOAS</span>  <br>      
                                         <span >NA FILA</span><br>
+                                    </div>
+                                </div>
+
+                                <div class="card_button">
+                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                </div>
+
+                                <div class="card_detalhe_icone">
+                                    <a href="#">
+                                        <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                        
+                                        <div class="card_detalhe_texto">
+                                            <span>Ver mais detalhes</span>  <br>      
+                                        
                                         </div>
-                                    </div>
-
-                                    <div class="card_button">
-                                        <button type="button" class="btn button_fila">ENTRA NA FILA</button>
-                                    </div>
-
-                                    <div class="card_detalhe_icone">
-                                        <a href="#">
-                                            <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                            
-                                            <div class="card_detalhe_texto">
-                                                <span>Ver mais detalhes</span>  <br>      
-                                            
-                                            </div>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="espaco_card">
-                    <div class="card mb-3 " >
-                        <div class="row no-gutters">
-                            
-                            <div class="col-md-4 ">
-                                <img src="img/fila/fila_videogame1.jpg" class="card_img" alt="...">
-                            </div>
-                        
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <H4 class="card_titulo">VIDEOGAME 02</H4>
-                                    <h6 class="card_subtitulo">escritório</h6>
+            
 
-                                    <div class="card_numero_fila">
-                                        <H1><span class="">4 </span></H1>
-                                        <div class="card_conteudo_fila">
+                <div class="card mb-3 card_fila" >
+                    <div class="row no-gutters">
+                        
+                        <div class="col-md-4 ">
+                            <img src="img/fila/fila_videogame1.jpg" class="card_img" alt="...">
+                        </div>
+                    
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                
+                                <H4 class="card_titulo">VIDEOGAME 02 </H4>
+                                <h6 class="card_titulo">escritório</h6>
+                                
+                                <div class="card_numero_fila">
+                                    <H1><span >5 </span></H1>
+                                    <div class="card_conteudo_fila">
                                         <span>PESSOAS</span>  <br>      
                                         <span >NA FILA</span><br>
-                                        </div>
-                                    </div>
-
-                                    <div class="card_button">
-                                        <button type="button" class="btn button_fila">ENTRA NA FILA</button>
-                                    </div>
-
-                                    <div class="card_detalhe_icone">
-                                        <a href="#">
-                                            <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                            
-                                            <div class="card_detalhe_texto">
-                                                <span>Ver mais detalhes</span>  <br>      
-                                            
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="espaco_card">
-                    <div class="card mb-3 " >
-                        <div class="row no-gutters">
-                            
-                            <div class="col-md-4 ">
-                                <img src="img/fila/fliperama7.jpg" class="card_img" alt="...">
-                            </div>
-                        
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <H4 class="card_titulo">FLIPERAMA</H4>
-                                    <h6 class="card_subtitulo">'</h6>
+                                <div class="card_button">
+                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                </div>
 
-                                    <div class="card_numero_fila">
-                                        <H1><span class="">4 </span></H1>
-                                        <div class="card_conteudo_fila">
-                                        <span>PESSOAS</span>  <br>      
-                                        <span >NA FILA</span><br>
+                                <div class="card_detalhe_icone">
+                                    <a href="#">
+                                        <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                        
+                                        <div class="card_detalhe_texto">
+                                            <span>Ver mais detalhes</span>  <br>      
+                                        
                                         </div>
-                                    </div>
-
-                                    <div class="card_button">
-                                        <button type="button" class="btn button_fila">ENTRA NA FILA</button>
-                                    </div>
-
-                                    <div class="card_detalhe_icone">
-                                        <a href="#">
-                                            <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                            
-                                            <div class="card_detalhe_texto">
-                                                <span>Ver mais detalhes</span>  <br>      
-                                            
-                                            </div>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            
 
-                <div class="espaco_card">
-                    <div class="card mb-3 " >
-                        <div class="row no-gutters">
-                            
-                            <div class="col-md-4 ">
-                                <img src="img/fila/sinu.png" class="card_img" alt="...">
-                            </div>
+                <div class="card mb-3 card_fila" >
+                    <div class="row no-gutters">
                         
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <H4 class="card_titulo">MESA DE JOGOS</H4>
-                                    <h6 class="card_subtitulo">sinuca | ping pong</h6>
-
-                                    <div class="card_numero_fila">
-                                        <H1><span class="">4 </span></H1>
-                                        <div class="card_conteudo_fila">
+                        <div class="col-md-4 ">
+                            <img src="img/fila/fliperama7.jpg" class="card_img" alt="...">
+                        </div>
+                    
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                
+                                <H4 class="card_titulo">FLIPERAMA</H4>
+                                <h6 class="card_titulo"><br></h6>
+                                
+                                <div class="card_numero_fila">
+                                    <H1><span class="">4 </span></H1>
+                                    <div class="card_conteudo_fila">
                                         <span>PESSOAS</span>  <br>      
                                         <span >NA FILA</span><br>
+                                    </div>
+                                </div>
+
+                                <div class="card_button">
+                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                </div>
+
+                                <div class="card_detalhe_icone">
+                                    <a href="#">
+                                        <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                        
+                                        <div class="card_detalhe_texto">
+                                            <span>Ver mais detalhes</span>  <br>      
+                                        
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="card_button">
-                                        <button type="button" class="btn button_fila">ENTRA NA FILA</button>
-                                    </div>
 
-                                    <div class="card_detalhe_icone">
-                                        <a href="#">
-                                            <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                            
-                                            <div class="card_detalhe_texto">
-                                                <span>Ver mais detalhes</span>  <br>      
-                                            
-                                            </div>
-                                        </a>
+                
+                <div class="card mb-3 card_fila" >
+                    <div class="row no-gutters">
+                        
+                        <div class="col-md-4 ">
+                            <img src="img/fila/sinu.png" class="card_img" alt="...">
+                        </div>
+                    
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                
+                                <H4 class="card_titulo">MESA DE JOGOS </H4>
+                                <h6 class="card_titulo">sinuca | ping pong</h6>
+                                
+                                <div class="card_numero_fila">
+                                    <H1><span class="">4 </span></H1>
+                                    <div class="card_conteudo_fila">
+                                        <span>PESSOAS</span>  <br>      
+                                        <span >NA FILA</span><br>
                                     </div>
+                                </div>
+
+                                <div class="card_button">
+                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                </div>
+
+                                <div class="card_detalhe_icone">
+                                    <a href="#">
+                                        <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                        
+                                        <div class="card_detalhe_texto">
+                                            <span>Ver mais detalhes</span>  <br>      
+                                        
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -236,8 +242,47 @@ session_start();
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div class="container-fluid espaco_grid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <div class="calendario">
+                            <H3 class="cor_prin_01_texto">  CALENDÁRIO DE <BR>ATIVIDADES</H3>
+                            <h5>Agende uma noite de board game, organize um <br> 
+                                campeonato de videogame ou cheque quando <br> 
+                                haverá ginástica laboral na sede: </h5>
+                            <button type="button" class="btn button_fila">ACESSAR AQUI</button>
+                        </div>      
+                    </div>
+                    <div class="col-md-7">
+                        <div  class="calendario_img">
+                            <img src="img/caledario.jpg "alt="caledario">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="container-fluid">
