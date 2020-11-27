@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
         },
         eventClick: function (info) {
+            $("#apagar_evento").attr("href", "proc_apagar_evento.php?id=" + info.event.id);
             info.jsEvent.preventDefault(); // don't let the browser navigate
             console.log(info.event);
             $('#visualizar #id').text(info.event.id);

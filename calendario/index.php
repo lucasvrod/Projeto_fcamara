@@ -55,6 +55,7 @@ session_start();
                                 <dd class="col-sm-9" id="end"></dd>
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
+                            <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                         </div>
                         <div class="formedit">
                             <span id="msg-edit"></span>
@@ -67,7 +68,7 @@ session_start();
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Color</label>
+                                    <label class="col-sm-2 col-form-label">Cores</label>
                                     <div class="col-sm-10">
                                         <select name="color" class="form-control" id="color">
                                             <option value="">Selecione</option>			
@@ -100,7 +101,7 @@ session_start();
                                 <div class="form-group row">
                                     <div class="col-sm-10">
                                         <button type="button" class="btn btn-primary btn-canc-edit">Cancelar</button>
-                                        <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Atualizar</button>                                    
+                                        <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-warning">Atualizar</button>                                    
                                     </div>
                                 </div>
                             </form>                            
@@ -129,7 +130,7 @@ session_start();
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Color</label>
+                                <label class="col-sm-2 col-form-label">Cores</label>
                                 <div class="col-sm-10">
                                     <select name="color" class="form-control" id="color">
                                         <option value="">Selecione</option>			
@@ -161,7 +162,7 @@ session_start();
 
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar Evento ou Board Game</button>                                    
+                                    <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar</button>                                    
                                 </div>
                             </div>
                         </form>
