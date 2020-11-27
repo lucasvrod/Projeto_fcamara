@@ -244,29 +244,30 @@ session_start();
         </div>
     </div>
 
-    <div class="container-fluid espaco_grid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-5 ">
-                        <div class="calendario">
-                            <H3 class="cor_prin_01_texto">  CALENDÁRIO DE <BR>ATIVIDADES</H3>
-                            <h5>Agende uma noite de board game, organize um <br> 
-                                campeonato de videogame ou cheque quando <br> 
-                                haverá ginástica laboral na sede: </h5>
-                            <button type="button" class="btn button_fila">ACESSAR AQUI</button>
-                        </div>      
-                    </div>
-                    <div class="col-md-7">
-                        <div  class="calendario_img">
-                            <img src="img/caledario.jpg "alt="caledario">
+    <div class="espaco_grid calendario">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="calendario_conteudo">
+                                <H3 class="cor_prin_01_texto" id="titulo_calen"> CALENDÁRIO DE <BR>ATIVIDADES</H3>
+                                <h5 id="calen_texto">Agende uma noite de board game, organize um 
+                                    campeonato de videogame ou cheque quando 
+                                    haverá ginástica laboral na sede: </h5>
+                                <div id="calen_button">
+                                    <a href="calendario.php" type="button" class="btn button_fila calen_button" >ACESSAR AQUI</a>
+                                </div>
+                            </div>      
                         </div>
-
-
+                        <div class="col-md-6">
+                            <div  class="calendario_img">
+                                <img src="img/caledario.jpg "alt="caledario">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

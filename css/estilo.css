@@ -89,9 +89,9 @@ H2{
 
 H3{
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif bold;
     font-size: 40px;
-    font-style: normal;
+    font-style: bold;
     font-weight: 700;
     line-height: 49px;
     letter-spacing: 0em;
@@ -207,21 +207,31 @@ h5{
 
 
 .calendario{
-    margin: 30% 0 0 0;
-
+    padding: 10% 0 3% 0;
+}
+.calendario_conteudo{
+    margin: 4% 0 4% 0;
+}
+#titulo_calen{
+    padding: 8% 0 0 0;
+}
+#calen_texto{
+    padding: 6% 0 0 0;
+    text-align: left;
+}
+#calen_button{
+    padding: 10% 0 0 0;
+}
+.calen_button{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
 }
 .calendario_img{
     position: relative;
-    width: 350px;
-    height: 500px;
-    max-width: 350px;
+    width: auto;
+    height: auto;
 }
-
-
-
-
-
-
 
 
 
