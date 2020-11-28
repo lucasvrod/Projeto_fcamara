@@ -15,29 +15,33 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontAwesome.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 </head>
 
 <body>
-
+    <div class="topnav">
     <nav class="navbar navbar-dark default-color ">
         <a href="index.html">
             <div class="logo">
-                <img src="img/logo_temp.png" alt="FIFO Logo">
+                <img src="img/logo.png" alt="FIFO Logo">
             </div>
         </a>
         <form class="form-inline my-2 my-lg-0 ml-auto">
-            <a href="" class="button" data-toggle="modal" data-target="#modalLoginForm">LOGIN</a>
-            <a href="" class="button" data-toggle="modal" data-target="#modalCadastroForm">CRIE UMA CONTA</a>
+            <a href="" class="button" data-toggle="modal" data-target="#modalCadastroForm">CADASTRE-SE</a>
+            <a href="" class="button-login" data-toggle="modal" data-target="#modalLoginForm">FAZER LOGIN</a>
         </form>
     </nav>
-
+    <h1 id="h1-topnav">O SITE DE JOGOS DA FCÂMARA</h1>
+    <p id="p-topnav">O FIFO reúne todas as informações que você precisa para acessar de forma rápida
+        e fácil as jogatinas e outras atividades disponíveis para você na sua sede!
+    </p>
+    </div>
     <div class="container">
         <div class="col-md-12">
             <div>
-                <!--            TODO alterar imagem-->
-                <img src="img/blank.png" alt="FIFO" align="right">
+                <img src="img/caledario.jpg" alt="FIFO" align="right">
             </div>
             <h2 align="left">O SITE DE JOGOS DA FCÂMARA</h2>
             <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -177,7 +181,7 @@ session_start();
         <div class="col-md-12">
             <div>
                 <!--            TODO alterar imagem-->
-                <img class="imgHome" src="img/celular_blank.png" alt="FIFO" align="left">
+                <img class="imgHome" src="img/mobile3 1.png" alt="FIFO" align="left">
             </div>
             <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -196,7 +200,7 @@ session_start();
                 <div class="col-md-5">
                     <div class="about-veno">
                         <div class="logo">
-                            <img src="img/logo_temp.png" alt="FIFO Logo">
+                            <img src="img/LOGO_FIFO_1.png" alt="FIFO Logo">
                         </div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, esse ipsam asperiores velit a
                             sequi neque laborum optio, modi ipsa reprehenderit. Veniam quam sint quisquam inventore
