@@ -159,12 +159,12 @@ h5{
     margin: 0 8% 0 8%;
 }
 
-.card_fila{
-    width: 48%;
-    height: 20%;
+ .card_fila{
+    width: auto;
+    height: auto;
     background: #C4C4C4;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 2%;
+    margin-right: 0;
 }
 
 .card_img{
