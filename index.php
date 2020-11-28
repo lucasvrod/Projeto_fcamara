@@ -23,7 +23,7 @@ session_start();
 <body>
     <div class="topnav">
     <nav class="navbar navbar-dark default-color ">
-        <a href="index.html">
+        <a href="index.php">
             <div class="logo">
                 <img src="img/logo.png" alt="FIFO Logo">
             </div>
@@ -36,161 +36,157 @@ session_start();
     <h1 id="h1-topnav">O SITE DE JOGOS DA FCÂMARA</h1>
     <p id="p-topnav">O FIFO reúne todas as informações que você precisa para acessar de forma rápida
         e fácil as jogatinas e outras atividades disponíveis para você na sua sede!
+        <a href="#">CADASTRE-SE</a>
     </p>
     </div>
-    <div class="container">
-        <div class="col-md-12">
-            <div>
-                <img src="img/caledario.jpg" alt="FIFO" align="right">
+
+    <div class="espaco_grid">
+        <div class="container-fluid" id="container-fluid-padding">
+        <h3 id="h3-fila-tempo-real">FILAS EM TEMPO REAL</h3>
+            <h5 id="h5-fila-tempo-real">Monitore as filas e, quando quiser jogar, em poucos cliques
+                você também pode entrar na de sua preferência. Depois é só aguardar
+                sua vez! <a href="#">Cadastre-se agora e acesse!</a>
+            </h5>
+            <div class="row">
+                <div class="cards-retangle" >
+                    <div class="row no-gutters">
+                        <div id="img-card1">
+                            <img src="img/fila/fila_videogame.jpg" class="img-cards-index" alt="...">
+                        </div>
+                        <div>
+                            <div class="card-body-index">
+                                <H4 class="card-titulo-index">VIDEOGAME 01</H4>
+                                <h7 class="card-desc-index">sala de descompressão</h7>
+                                <div>
+                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
+                                    <span class="quantidade-pessoas-fila">1</span>
+                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
+                                </div>
+                                <div class="card-details">
+                                    <a href="#">
+                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
+                                        <a href="#">Ver mais detalhes</a>      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="cards-retangle" >
+                    <div class="row no-gutters">
+                        <div id="img-card1">
+                            <img src="img/fila/fila_videogame1.jpg" class="img-cards-index" alt="...">
+                        </div>
+                        <div>
+                            <div class="card-body-index">
+                                <H4 class="card-titulo-index">VIDEOGAME 02</H4>
+                                <h7 class="card-desc-index">escritório</h7>
+                                <div>
+                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
+                                    <span class="quantidade-pessoas-fila">5</span>
+                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
+                                </div>
+                                <div class="card-details">
+                                    <a href="#">
+                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
+                                        <a href="#">Ver mais detalhes</a>      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-retangle" >
+                    <div class="row no-gutters">
+                        <div id="img-card1">
+                            <img src="img/fliperama-index.png" class="img-cards-index-exp" alt="...">
+                        </div>
+                        <div>
+                            <div class="card-body-index">
+                                <H4 class="card-titulo-index">FLIPERAMA</H4>
+                                <h7 class="card-desc-index"></h7>
+                                <div>
+                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
+                                    <span class="quantidade-pessoas-fila">6</span>
+                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
+                                </div>
+                                <div class="card-details">
+                                    <a href="#">
+                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
+                                        <a href="#">Ver mais detalhes</a>      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-retangle" >
+                    <div class="row no-gutters">
+                        <div id="img-card1">
+                            <img src="img/sinuca-index.png" class="img-cards-index-exp" alt="...">
+                        </div>
+                        <div>
+                            <div class="card-body-index">
+                                <H4 class="card-titulo-index">MESA DE JOGOS</H4>
+                                <h7 class="card-desc-index">sinuca | ping pong</h7>
+                                <div>
+                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
+                                    <span class="quantidade-pessoas-fila">5</span>
+                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
+                                </div>
+                                <div class="card-details">
+                                    <a href="#">
+                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
+                                        <a href="#">Ver mais detalhes</a>      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 align="left">O SITE DE JOGOS DA FCÂMARA</h2>
-            <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
+        </div>
+    </div>
+
+    <div class="espaco_grid calendario">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="calendario_conteudo">
+                                <H3 class="cor_prin_01_texto" id="titulo_calen">
+                                QUE TAL AGENDAR UMA ATIVIDADE?</H3>
+                                <h5 id="calen_texto">Quer marcar noites de board 
+                                game, organizar um campeonato de viodegames, ou 
+                                checar quando haverá ginástica laboral na sede?
+                                Com o nosso calendário de atividades você pode 
+                                fazer tudo isso. Acesse seu perfil e experimente agora!</h5>
+                            </div>      
+                        </div>
+                        <div class="col-md-6">
+                            <div  class="calendario_img">
+                                <img src="img/caledario.jpg "alt="caledario">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <section class="featured-places" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>VEJA AS FILAS EM TEMPO REAL</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <img src="img/ps4.jpg" alt="">
-
-                            <div class="date-content">
-                                <h6>4</h6>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <h4>Videogame</h4>
-                            <span>Sala de descompressão</span>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <!--<div class="text-button">
-                                    <a href="#">Add to favorites</a>
-                                </div>-->
-                                </div>
-                                <div class="col-md-6">
-                                    <!--<div class="text-button">
-                                    <a href="#">Continue Reading</a>
-                                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <img src="img/ps4.jpg" alt="">
-
-                            <div class="date-content">
-                                <h6>6</h6>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <h4>Videogame</h4>
-                            <span>Escritório</span>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <!--<div class="text-button">
-                                    <a href="#">Add to favorites</a>
-                                </div>-->
-                                </div>
-                                <div class="col-md-6">
-                                    <!--<div class="text-button">
-                                    <a href="#">Continue Reading</a>
-                                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <img src="img/flipp.jpg" alt="">
-
-                            <div class="date-content">
-                                <h6>3</h6>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <h4>Videogame</h4>
-                            <span>Fliperama</span>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <!--<div class="text-button">
-                                    <a href="#">Add to favorites</a>
-                                </div>-->
-                                </div>
-                                <div class="col-md-6">
-                                    <!--<div class="text-button">
-                                    <a href="#">Continue Reading</a>
-                                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <img src="img/sinuca.jpg" alt="">
-
-                            <div class="date-content">
-                                <h6>2</h6>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <h4>Videogame</h4>
-                            <span>Mesa de jogos</span>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <!--<div class="text-button">
-                                    <a href="#">Add to favorites</a>
-                                </div>-->
-                                </div>
-                                <div class="col-md-6">
-                                    <!--<div class="text-button">
-                                    <a href="#">Continue Reading</a>
-                                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
+    <div class="session_mobile">
         <div class="col-md-12">
             <div>
-                <!--            TODO alterar imagem-->
-                <img class="imgHome" src="img/mobile3 1.png" alt="FIFO" align="left">
+                <img id="imgHome" src="img/mobile3 1.png" alt="FIFO" align="left">
             </div>
-            <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
-            <p align="left">-ncididunt ut labore et dolore magna aliqua</p>
+            <h3 id="h3-session-mobile" align="left">Não está em sua sede da FCâmara e deseja entrar na plataforma?</h3>
+            <h5 id="h5-session-mobile" align="left">Simples! É só entrar pela plataforma no seu celular
+                para ter acesso a todas as vantagens do FIFO!
+            </h5>
         </div>
     </div>
 
