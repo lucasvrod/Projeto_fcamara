@@ -190,60 +190,8 @@ session_start();
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="about-veno">
-                        <div class="logo">
-                            <img src="img/LOGO_FIFO_1.png" alt="FIFO Logo">
-                        </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, esse ipsam asperiores velit a
-                            sequi neque laborum optio, modi ipsa reprehenderit. Veniam quam sint quisquam inventore
-                            nobis commodi veritatis? Perspiciatis.</p>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="https://www.instagram.com/grupo.fcamara/" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#instagram" />
-                                    </svg>
-                                </a>
-                                <a href="https://pt-br.facebook.com/grupofcamara/" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#facebook" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/company/fcamara-consulting-&-training/"
-                                    target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#linkedin" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCHsQ04xha1YKv48dSzQFlpw" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#youtube" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.glassdoor.com.br/Avalia%C3%A7%C3%B5es/Grupo-FCamara-Avalia%C3%A7%C3%B5es-E668818.htm"
-                                    target="_blank">
-                                    <svg id="glassdoor" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                                        width="1em" height="1em"
-                                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                        <path
-                                            d="M17.144 20.572H3.43A3.427 3.427 0 0 0 6.856 24h10.286a3.428 3.428 0 0 0 3.428-3.428V6.492a.123.123 0 0 0-.124-.125h-3.18a.125.125 0 0 0-.123.126v14.08zm0-20.572a3.429 3.429 0 0 1 3.427 3.43H6.858v14.078a.126.126 0 0 1-.125.125H3.554a.125.125 0 0 1-.125-.125V3.428A3.429 3.429 0 0 1 6.856 0h10.287"
-                                            fill="#fe662e" />
-                                        <rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'layout/footer.php';?>
+    
     <div class="sub-footer">
         <p>Copyright &copy; 2020 Fcamara
     </div>
@@ -257,12 +205,12 @@ session_start();
             <div class="modal-content">
                 <form action="_api/login.php" method="post">
                     <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold">LOGIN</h4>
+                        <h4 class="modal-title w-100 font-weight-bold" style="color: white;">LOGIN</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3">
+                    <div class="modal-body mx-3" style="color: white;">
                         <div class="md-form mb-5">
                             <label data-error="wrong" data-success="right" for="defaultForm-email">Email</label>
                             <input name="email" type="email" id="defaultForm-email" class="form-control validate"
@@ -275,7 +223,7 @@ session_start();
                         </div>
 
                         <div class="btnForm">
-                            <input type="submit" name="Enviar" class="button">
+                            <input type="submit" name="Enviar" class="button-modal">
                         </div>
                         <div>
 
@@ -299,13 +247,13 @@ session_start();
         <div class="modal-dialog" role="document">
             <form  action="_api/cadastro.php" method="post">
                 <div class="modal-content">
-                    <div class="modal-header text-center">
+                    <div class="modal-header text-center" style="color: white;">
                         <h4 class="modal-title w-100 font-weight-bold">CADASTRO</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3">
+                    <div class="modal-body mx-3" style="color: white;">
                         <div class="md-form mb-4">
                             <label data-error="wrong" data-success="right" for="defaultForm-apelido">Como você gostaria
                                 de
@@ -336,7 +284,7 @@ session_start();
 
 
                     <div class="modal-footer d-flex justify-content-center">
-                        <input type="submit" name="cadastro" class="button">
+                        <input type="submit" name="cadastro" class="button-modal">
                     </div>
                 </div>
             </form>

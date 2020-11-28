@@ -482,3 +482,14 @@ footer{
     color: #121225;
     text-align: left;
 }
+
+.button-modal {
+    background-color: #FE5517;
+    color: #fff;
+    text-decoration:none;
+    height: 48px;
+    width: 173px;
+    border-radius: 4px;
+    text-align: center; 
+    margin-right: 23.24px;
+}
