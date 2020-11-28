@@ -150,6 +150,9 @@ h5{
     background: #FE5517;
 }
 
+.cor_braco{
+   color: #fff;
+}
 
 .espaco_grid{
     margin: 0 8% 0 8%;
@@ -271,22 +274,22 @@ footer{
     color: #fff;
 }
 
-.modal_tamanho_botao{
-    height: 48px;
-    width: 170px;
-    left: 0px;
-    top: 0px;
-    border-radius: 4px;
+.modal_fila_numero{
+    padding-left: 30%;
 }
-.modal_tamanho_botao:hover{
-    height: 48px;
-    width: 170px;
-    left: 0px;
-    top: 0px;
-    border-radius: 4px;
+.modal_fila_texto{
+    padding-left: 30%;
+    margin-top: -24%;
+    margin-bottom: 9%;
+}
+.modal_fila_espaco{
+    margin-top: 6%;
 }
 
-.modal_texto{
-    margin: 10px 0 10px 0;
+.modal_tamanho_botao{
+    height: 9%;
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
 
