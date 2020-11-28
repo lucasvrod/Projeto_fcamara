@@ -27,9 +27,66 @@ session_start();
     <header>
         <?php include 'layout/header.php';?>
     </header>
-    <main>
+    <form>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/teste.png" id="perfil">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <H3>EDITAR PERFIL</H3>
+                                    <h5>INFORMAÇÕES PESSOAIS</h3>
 
-    </main>
+                                    <div class="">
+                                        <label for="formGroupExampleInput2">Como você quer ser chamado *</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                    </div> 
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Email *</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5> SUA SENHA</h5>
+
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Sua senha atual *</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Nova senha</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                    </div> 
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Repetir nova senha *</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
 
 
 

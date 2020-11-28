@@ -46,20 +46,15 @@ session_start();
     <div class="espaco_grid">
         <div class="container-fluid">
             <div class="row">
-
                 <div class="card mb-3 card_fila" >
                     <div class="row no-gutters">
-                        
                         <div class="col-md-4 ">
                             <img src="img/fila/fila_videogame.jpg" class="card_img" alt="...">
                         </div>
-                    
                         <div class="col-md-8">
-                            <div class="card-body ">
-                                
+                            <div class="card-body "> 
                                 <H4 class="card_titulo">VIDEOGAME 01 </H4>
-                                <h6 class="card_titulo">sala de descompressão</h6>
-                                
+                                <h6 class="card_titulo">sala de descompressão</h6>                                
                                 <div class="card_numero_fila">
                                     <H1><span class="">4 </span></H1>
                                     <div class="card_conteudo_fila">
@@ -67,18 +62,14 @@ session_start();
                                         <span >NA FILA</span><br>
                                     </div>
                                 </div>
-
-                                <div class="card_button">
-                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                <div class="card_button">                           
+                                    <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">ENTRA NA FILA</button>
                                 </div>
-
                                 <div class="card_detalhe_icone">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame1">
                                         <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                        
                                         <div class="card_detalhe_texto">
                                             <span>Ver mais detalhes</span>  <br>      
-                                        
                                         </div>
                                     </a>
                                 </div>
@@ -109,12 +100,12 @@ session_start();
                                     </div>
                                 </div>
 
-                                <div class="card_button">
-                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                <div class="card_button"> 
+                                    <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME02">ENTRA NA FILA</button>
                                 </div>
 
                                 <div class="card_detalhe_icone">
-                                    <a href="#">
+                                    <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_videogame2">
                                         <H1><span >  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
                                         
                                         <div class="card_detalhe_texto">
@@ -152,11 +143,11 @@ session_start();
                                 </div>
 
                                 <div class="card_button">
-                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                    <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_FLIPERAMA">ENTRA NA FILA</button>
                                 </div>
 
                                 <div class="card_detalhe_icone">
-                                    <a href="#">
+                                    <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_FLIPERAMA">
                                         <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
                                         
                                         <div class="card_detalhe_texto">
@@ -194,11 +185,11 @@ session_start();
                                 </div>
 
                                 <div class="card_button">
-                                    <button type="button" class="btn button_fila">ENTRA NA FILA</button>
+                                    <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_MESA_DE_JOGOS">ENTRA NA FILA</button>
                                 </div>
 
                                 <div class="card_detalhe_icone">
-                                    <a href="#">
+                                    <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS">
                                         <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
                                         
                                         <div class="card_detalhe_texto">
@@ -245,112 +236,268 @@ session_start();
     
     <?php include 'layout/footer.php';?>
 
-    <!--MODAL EDITAR PERFIL-->
 
-    <div class="modal fade " id="modal_editar_perfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <form action="_api/atualiza_perfil.php" method="post" enctype="multipart/form-data">
-
-
-
-
-                    <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold">EDITAR PERFIL</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    
-                    <div class="modal-body mx-3">
-
-                        <form method="post" action="../_api/api.php">
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                        
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Nome</label>
-                                    <input type="text" name="nome_perfil" class="form-control validate" placeholder="Nome" value="<?php echo $_SESSION['nome'] ; ?>">
-                                
-                                </div>
-                                <!--
-                                <div class="form-group col-md-12">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Apelido</label>
-                                    <input type="text" name="apelido_perfil" class="form-control validate" placeholder="Apelido" value="<?php echo $_SESSION['apelido']; ?>">
-                                </div>-->
-
-                            </div>
-
-                            <div class="form-row">
-
-                                <div class="form-group col-md-12">
-                                    <label for="inputEmail4">E-mail</label>
-                                    <input type="email" name="email_perfil" class="form-control" placeholder="E-mail" value="<?php echo $_SESSION['email']; ?>">
-                                </div>
-
-                                <div class="form-group col-md-12">
-                                    <label for="inputEmail4">Senha</label>
-                                    <input type="text" name="senha_perfil" class="form-control" placeholder="Senha" value="<?php echo $_SESSION['senha'];?>">
-                                </div>
-
-                                <div class="form-group col-md-12">
-                                    <label for="inputEmail4">Foto</label>
-                                    <input type="file" name="arquivo" placeholder="Foto" >
-                                </div>
-
-                            </div>
-                            
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" required>
-                           
-                                    <label class="form-check-label" for="gridCheck">
-                                        Concordo que esta mudança não terá volta
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn button_fila"type="submit" name="AtualizarPerfil" value="<?php echo $_SESSION['BuscarPerfil']['idusuario']?>" class="btn btn-primary">ATUALIZAR</button>
-                                <!--<button type="submit" name="ExcluirPerfil" value="<?php echo $_SESSION['BuscarPerfil']['idusuario']?>" class="btn btn-danger">Excluir Conta</button>
-                                -->
-                            </div>
-                        </form>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--MODAL SAIR DA FILA-->
-
-    <div class="modal fade" id="modal_da_sair_fila" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
+    <!--MODAL ENTRA NA FILA 1 -->
+    <div class="modal fade" id="modal_fila_VIDEOGAME01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
                 <div class="modal-content cormodal">
-                    <div class="modal-header text-center ">
-                        <h5 class="modal-title w-100 font-weight-bold modal_texto">Você tem certeza que deseja sair?</h5>
+                    <div class="modal-header text-center">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <img src="img/close.png"  class="modal_icone_close">
                         </button>
                     </div>
                     <div class="modal-body mx-3 ">
-                        
-                        <label data-error="wrong" data-success="right" for="defaultForm-apelido">Essa ação não poderá ser desfeita. Caso você deseje retornar irá para o final da fila.</label>
-                        
+                    
+                       <ul class=" modal_fila_numero">
+                        <li class="">
+                            <H1 class="cor_prin_02_texto">1</H1>
+                        </li>
+                        <li class="modal_fila_texto">
+                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
+                        </li>
+                    </ul>
+
+                    <div class="modal_fila_espaco">
+                        <input name="equipamento" type="text" value="1" hidden>
+
+                        <label> Que jogo gostaria de jogar?</label>
+                        <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
                     </div>
-                    <div class="modal-footer d-flex justify-content-center">
-
-                        <button type="button" class="btn  button_fila modal_tamanho_botao" data-dismiss="modal">CANCELAR</button>
-                        <button type="button" class="btn button_fila modal_tamanho_botao">SAIR DA FILA</button>
-
-
+                    <div class=" d-flex justify-content-center">
+                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
                     </div>
+                    </div>   
                 </div>
             </form>
         </div>
     </div>
-      
+    <!--MODAL VIDEOGAME 02 -->
+    <div class="modal fade" id="modal_fila_VIDEOGAME02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 02<br> escritório</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                    
+                       <ul class=" modal_fila_numero">
+                        <li class="">
+                            <H1 class="cor_prin_02_texto">1</H1>
+                        </li>
+                        <li class="modal_fila_texto">
+                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
+                        </li>
+                    </ul>
+
+                    <div class="modal_fila_espaco">
+                        <input name="equipamento" type="text" value="1" hidden>
+
+                        <label> Que jogo gostaria de jogar?</label>
+                        <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                    </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--MODAL FILA FLIPERAMA -->
+    <div class="modal fade" id="modal_fila_FLIPERAMA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                    
+                       <ul class=" modal_fila_numero">
+                        <li class="">
+                            <H1 class="cor_prin_02_texto">4</H1>
+                        </li>
+                        <li class="modal_fila_texto">
+                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
+                        </li>
+                    </ul>
+
+                    <div class="modal_fila_espaco">
+                        <input name="equipamento" type="text" value="1" hidden>
+
+                        <label> Que jogo gostaria de jogar?</label>
+                        <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                    </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--MODAL ENTRA NA FILA MESA DE JOGOS -->
+    <div class="modal fade" id="modal_fila_MESA_DE_JOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br> sinuca | ping pong</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                    
+                    <ul class=" modal_fila_numero">
+                        <li class="">
+                            <H1 class="cor_prin_02_texto">1</H1>
+                        </li>
+                        <li class="modal_fila_texto">
+                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
+                        </li>
+                    </ul>
+
+                    <div class="modal_fila_espaco">
+                        <input name="equipamento" type="text" value="1" hidden>
+
+                        <label> Que jogo gostaria de jogar?</label>
+                        <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                    </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL de detalhe na fila video game1 -->
+    <div class="modal fade" id="modal_detalhe_fila_videogame1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                            <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!--MODAL de detalhe na fila videogame2-->
+    <div class="modal fade" id="modal_detalhe_fila_videogame2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 02<br> escritório</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                            <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--MODAL de detalhe na fila FLIPERAMA-->
+    <div class="modal fade" id="modal_detalhe_fila_FLIPERAMA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                            <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+        <!--MODAL de detalhe na fila MESADEJOGOS-->
+    <div class="modal fade" id="modal_detalhe_fila_MESADEJOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br>sinuca | ping pong</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                            <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
 
 
 
