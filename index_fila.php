@@ -27,9 +27,6 @@ session_start();
     <header>
         <?php include 'layout/header.php';?>
     </header>
-
-
-
     <div class="container ">
         <div class="col-md-12" >
             <div class="texto_fila">
@@ -40,9 +37,6 @@ session_start();
             </div>
         </div>
     </div>
-
-
-   
     <div class="espaco_grid">
         <div class="container-fluid">
             <div class="row">

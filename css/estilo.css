@@ -124,6 +124,7 @@ h6{
     font-size: 16px;
     line-height: 20px;
     color: #000;
+    text-align:center;
 } 
 
 h5{
@@ -315,8 +316,60 @@ footer{
 }
 .modal_espaco_img{
     padding-right: 30%;
+}
+#img_perfil_usuario{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 15%;
+}
+
+#alterar_foto{
+    color: #FE5517; 
+    margin-left: 22%;
+}
+#titulo_espaco{
+    margin-top: 19%;
+    color:#FE5517;
+    padding-bottom: 8%;
+    text-align: left;
+}
+
+#subtitulo_espaco{
+    color:#FE5517;
+    text-align: left;
+    padding-bottom: 7%;
+}
+.div_email{
+    padding-top: 63.5%;
+}
+#div_repetir_senha{
+    padding-top: 45%;
+}
+.aliamento_button{
+    margin-left:6.5%;
+}
+.button_salvar{
+    background-color: #FE5517;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 4px;
+    text-align: center; 
 
 }
+.button_salvar:hover{
+    background-color: #B93200;
+    color: #fff;   
+}
+#button_modal_salvar{
+    margin-left: 2%;
+    width: 167px;
+    height: 48px;
+}
+
+
+
 
 .topnav {
     width: 100%;
