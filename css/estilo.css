@@ -144,7 +144,7 @@ h5{
 .card_fila{
     width: 48%;
     height: 20%;
-    background: #A8A8D0;
+    background: #C4C4C4;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
 }
@@ -229,36 +229,37 @@ h5{
 }
 .calendario_img{
     position: relative;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
-
-
-
-
 
 footer{
     background-color: #121225;
-    height: 336,18px;
+    height: auto;
+    width: auto;
+    padding: 4.5% 0 0 0;
 }
 
-.footer_texto{
+#footer_texto{
     color:#fff;
     font-size: 16px;
-    padding-top: 25px;
 }
-
 .footer_img{
-    margin: 0 0 0 250px;
+    padding-left: 50%; 
 }
 
-.footer_icone{
-    margin: 35px 0 0 0;
+#footer_icone{
+    text-align: center;
+    padding-left: 28%; 
+
 }
+
 .cormodal{
     background: #36357e;
     color: #fff;
 }
+
+
 
 .modal_tamanho_botao{
     height: 48px;

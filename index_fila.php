@@ -272,34 +272,32 @@ session_start();
     </div>
 
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
+    <footer class="footer">
         <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row">
 
-                    <div class="col-md-6">  
-                        <div class="logo footer_img">
-                            <img src="img/LOGO_FIFO_1.png" alt="FIFO Logo"><br>
-                            <img src="img/LOGO_FCAMARA(1).png" alt="Logo FCAMARA">
+                    <div class="col-md-6 ">
+
+                        <div class="footer_img">
+                            <img src="img/LOGO_FIFO_1.png" alt="FIFO Logo">
                         </div>
                     </div>
-
                     <div class="col-md-6">
 
-                        <div class="about-veno footer_icone">
+
+                        <div class="">
+                            <img src="img/LOGO_FCAMARA(1).png" alt="Logo FCAMARA"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div id="footer_icone">
+                        <div class="about-veno ">
                             <ul class="social-icons">
                                 <li>
                                     <a href="https://www.instagram.com/grupo.fcamara/" target="_blank">
@@ -325,11 +323,10 @@ session_start();
                                     </a>
                                 </li>
                             </ul>
-                            <p><h6 class="footer_texto">&copy; 2020 FCamara Formação e Consultoria.<br>
+                            <p><h6 id="footer_texto">&copy; 2020 FCamara Formação e Consultoria.
                             Todos os direitos reservados<h6></p>
-                        </div>
+                        </div> 
                     </div>
-
                 </div>
             </div>
         </div>
