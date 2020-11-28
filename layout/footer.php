@@ -1,28 +1,23 @@
 <footer class="footer">
-        <div class="container-fluid">
+       <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row">
-
                     <div class="col-md-6 ">
-
-                        <div class="footer_img">
+                        <div class="footer_centro">
                             <img src="img/LOGO_FIFO_1.png" alt="FIFO Logo">
                         </div>
                     </div>
                     <div class="col-md-6">
-
-
-                        <div class="">
+                        <div class="footer_centro">
                             <img src="img/LOGO_FCAMARA(1).png" alt="Logo FCAMARA"><br>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-12">
-                <div class="row">
-
-                    <div id="footer_icone">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_centro">
                         <div class="about-veno ">
                             <ul class="social-icons">
                                 <li>

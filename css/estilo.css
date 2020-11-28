@@ -259,15 +259,10 @@ footer{
     color:#fff;
     font-size: 16px;
 }
-.footer_img{
-    padding-left: 50%; 
-}
-
-#footer_icone{
+.footer_centro{
     text-align: center;
-    padding-left: 28%; 
-
 }
+
 
 .cormodal{
     background: #36357e;

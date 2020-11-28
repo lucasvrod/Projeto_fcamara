@@ -102,27 +102,8 @@ session_start();
     </div>
 
     <!--MODAL salvar -->
-    <!-- <div class="modal fade" id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center">
-                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">Confirma que deseja salvar suas <br>alterações? </h6>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <img src="img/close.png"  class="modal_icone_close">
-                        </button>
-                    </div>
 
-                    <div class="modal-body mx-3 ">
-                        <h6>  Elas não poderão ser desfeitas.</h6>
-                        <div class=" d-flex justify-content-center">
-                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
-                    </div>
-                    </div>   
-                </div>
-            </form>
-        </div>
-    </div> -->
+  
     <div class="modal fade" id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
