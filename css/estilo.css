@@ -293,3 +293,49 @@ footer{
     margin-bottom: 3%;
 }
 
+.topnav {
+    width: 100%;
+    height: 52em;
+    background: linear-gradient(180deg, rgba(254, 85, 23, 0.374) 15.1%, 
+    rgba(254, 102, 46, 0.0825) 46.35%), rgba(254, 102, 46, 0.75);
+    background-image: url("../img/fila/fila_videogame.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.button-login {
+    color: white;
+}
+
+.button-login:hover {
+    color: white;
+}
+
+#h1-topnav {
+    position: absolute;
+    width: 665.43px;
+    height: 153.05px;
+    left: 96px;
+    top: 520.46px;
+    font-family:'Montserrat', sans-serif bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+#p-topnav {
+    position: absolute;
+    width: 640px;
+    height: 93.31px;
+    left: 99px;
+    top: 684.53px;
+    font-family:'Montserrat', sans-serif bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
