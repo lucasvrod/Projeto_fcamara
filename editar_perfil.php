@@ -24,9 +24,9 @@ session_start();
 
 
 <body>
-     <header>
+     <!-- <header>
         <?php include 'layout/header.php';?>
-    </header> 
+    </header>  -->
 
     <div class="espaco_grid">
         <form>
@@ -97,15 +97,12 @@ session_start();
                                         </div>
                                         <div class="row">
                                             <div>
-                                                <a href="index_fila.php" class=" d-none d-sm-block" id ="button_CANCELAR">CANCELAR</a>
-
+                                                <a href="index_fila.php" class="d-none d-lg-block" id="button_CANCELAR">CANCELAR</a>
                                             </div>
                                             <div>
-                                                <button type="button" class="btn " id="button_salvar"  data-toggle="modal" data-target="#modal_salvar">SALVAR ALTERAÇÕES</button>
+                                                <button type="button" class="btn button_salvar" data-toggle="modal" data-target="#modal_salvar">SALVAR ALTERAÇÕES</button>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -117,27 +114,23 @@ session_start();
     </div>
 
     <!--MODAL salvar -->
-    <div class="modal fade " id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
-        <div class="modal-dialog " role="document">
+    <div class="modal fade" id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center ">
-                        <h5 class="modal-title w-100 font-weight-bold modal_texto">Confirma que deseja salvar suas alterações?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-content modal_tamanho_cor">
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_titulo">Confirma que deseja<br> salvar suas alterações?</h5>
+                        <!-- <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png"  class="modal_icone_close">
-                        </button>
+                        </button> -->
                     </div>
                     <div class="modal-body mx-3 ">
                         
-                       <h6 class="cor_braco">Elas não poderão ser desfeitas.</h6>
+                        <h6 class="cor_braco" id="modal_texto_h7">Elas não poderão ser desfeitas.</h6>
+        
+                        <button type="button" class="btn button_salvar" data-dismiss="modal">RETONAR</button>
+                        <button type="button" class="btn button_salvar" >SALVAR</button>
                         
-                    </div>
-                    <div class=" d-flex justify-content-center">
-
-                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" data-dismiss="modal">RETONAR</button>
-                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" >SALVAR</button>
-
-
                     </div>
                 </div>
             </form>

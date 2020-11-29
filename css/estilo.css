@@ -131,7 +131,7 @@ h6{
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 21px;
     color: #000;
     
     
@@ -281,6 +281,14 @@ footer{
     background: #36357e;
     color: #fff;
 }
+.modal_tamanho_cor{
+    background: #36357e;
+    color: #fff;
+    width: 416px;
+    height: 297px;
+
+
+}
 
 .modal_fila_numero{
     padding-left: 30%;
@@ -370,7 +378,7 @@ footer{
     margin-bottom: 50px;
 
 }
-#button_salvar{
+.button_salvar{
     background-color: #FE5517;
     color: #fff;
     text-decoration:none;
@@ -378,16 +386,18 @@ footer{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 110px;
+    width: auto;
     
 }
 .button_salvar:hover{
     background-color: #B93200;
     color: #fff;   
 }
-#button_modal_salvar{
-    margin-left: 2%;
-    width: 167px;
-    height: 48px;
+
+.modal_titulo{
+    text-align: left;
+    margin-top: 32px;
+    margin-left: 21px;
 }
 
 .topnav {
@@ -621,16 +631,42 @@ footer{
     .aliamento_button{
         margin-left:0;
     }
-    .button_salvar{
-        text-align: center; 
-        height: 40px;
-        width: 235px;
-        margin-top: 44.64px;
-        margin-bottom: 44.64px;
-        margin-left: 30px;
-  
+    .modal_tamanho_cor{
+        border-radius: 0;
+        width: 335px;
+        height: 228.8px;
+    }
+    .modal_titulo{
+        font-family:'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 21px;
     }
 
+    #modal_texto_h7{
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 3px;
+        margin-bottom: 0;
+        margin-left: -11px;
+    }
+    .button_salvar{
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 36px;
+        width: 130px;
+        height: 40px;
+    }
+    .button_salvar:hover{
+        background-color: #FE5517;
+    }
 
 
  }

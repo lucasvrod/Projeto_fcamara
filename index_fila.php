@@ -513,7 +513,7 @@ session_start();
                         
                     </div>
                     <div class=" d-flex justify-content-center">
-
+                            <!-- Refazer o button -->
                         <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" data-dismiss="modal">RETONAR</button>
                         <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" >CANCELAR</button>
 
