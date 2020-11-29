@@ -27,11 +27,7 @@
                     </a>
                 </div>    
                 
-                <div id="headar_espacamento">
-                    <h6 id="header_nome" >Olá, MARCOS. <br>Bem vindo(a)</h6>
-                </div>
-
-                <div class="btn-group dropdowns_btn ">
+                <div class="btn-group dropdowns_btn  ">
                     <button type="button" class="btn dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="img/Vector.png">
                     </button>
@@ -43,7 +39,10 @@
                     </div>
 
                 </div> 
-                
+                <div id="headar_espacamento">
+                    <h6 id="header_nome" >Olá, MARCOS. <br>Bem vindo(a)</h6>
+                </div>
+
                 <div>
                     <img src="img/teste.png" id="perfil" alt="FIFO Logo">
                 </div>
@@ -51,4 +50,5 @@
             </div>
         </div>
     </div>
-</header>
+</header>  
+

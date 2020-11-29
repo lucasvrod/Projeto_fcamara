@@ -12,8 +12,6 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
-
-
 *{
 	margin: 0px;
 	padding: 0px;
@@ -22,7 +20,7 @@
     background: linear-gradient(180deg, rgba(254, 85, 23, 0.8) 31.25%, rgba(254, 102, 46, 0.4) 91.15%),
     linear-gradient(0deg, #FE662E, #FE662E);
     width: auto;
-    height: 190px;
+    height: 230px;
     padding: 0 8% 0 8%;
 }
 
@@ -30,11 +28,10 @@
     position: relative;
     width: 70%;
     height: 60%;
-    margin: 0 0 0 0; 
+    margin: 7% 0 0 -80%; 
 }
-
 #headar_espacamento{
-    margin-left: 30%;
+    margin-top: 2%;
 }
 
 #header_nome{
@@ -50,19 +47,31 @@
 .dropdowns_btn{
     width: auto;
     height: 10%;
-    margin-top: 6.5%;
+    margin-top: 8.5%;
     color: #fff;
+    padding-right: 8px;
 }
 
 
 img#perfil{
     position: absolute;
-    width: 145px;
-    height: 130px;
+    width: 132.49px;
+    height: 133.63px;
     border-radius: 100%;
-    top: 11%;
-    
-} 
+    top: 16%; 
+}  
+
+
+
+.vaique{
+    color: #fff;
+    margin-left: 65%; 
+    padding-right: 5%;
+    padding-top: 10%;
+}
+
+
+
 
 
 
@@ -124,7 +133,8 @@ h6{
     font-size: 16px;
     line-height: 20px;
     color: #000;
-    text-align:center;
+    
+    
 } 
 
 h5{
@@ -164,7 +174,7 @@ h5{
     height: auto;
     background: #C4C4C4;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 0;
+    
 }
 
 .card_img{
@@ -178,6 +188,9 @@ h5{
 
 .card_titulo{
     margin: -4% 0 3% 10%;    
+}
+#align_left{
+    text-align: left;
 }
 
 .card_numero_fila{
@@ -242,10 +255,10 @@ h5{
     height: 10%;
     margin-left: 25%;
 }
-.calendario_img{
+.calendario_img img{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 92%;
+    height: 92%;
 }
 
 footer{
@@ -313,18 +326,26 @@ footer{
     padding-right: 30%;
 }
 #img_perfil_usuario{
-    position: relative;
     height: 80%;
     width: 80%;
     border-radius: 50%;
     margin-top: 15%;
 }
 
-#alterar_foto{
+
+.button_alterar_foto{
     color: #FE5517; 
-    margin-left: 22%;
+    padding-left: 70px;
+    text-align: center;
+    text-decoration-line: underline;
 }
-#titulo_espaco{
+.button_alterar_foto:hover{
+    color: #FE5517; 
+    padding-left: 70px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+#titulo_editar_perfil{
     margin-top: 19%;
     color:#FE5517;
     padding-bottom: 8%;
@@ -336,22 +357,28 @@ footer{
     text-align: left;
     padding-bottom: 7%;
 }
-.div_email{
+#div_email{
     padding-top: 63.5%;
 }
 #div_repetir_senha{
     padding-top: 45%;
 }
-.aliamento_button{
-    margin-left:6.5%;
+#button_CANCELAR{
+    margin-right:40px;
+    color:#FE5517;
+    margin-top:30px;
+    margin-bottom: 50px;
+
 }
-.button_salvar{
+#button_salvar{
     background-color: #FE5517;
     color: #fff;
     text-decoration:none;
     border-radius: 4px;
-    text-align: center; 
-
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 110px;
+    
 }
 .button_salvar:hover{
     background-color: #B93200;
@@ -362,9 +389,6 @@ footer{
     width: 167px;
     height: 48px;
 }
-
-
-
 
 .topnav {
     width: 100%;
@@ -541,3 +565,72 @@ footer{
     text-align: center; 
     margin-right: 23.24px;
 }
+
+
+@media (max-width: 576px) { 
+    /* Pagina Editar perfil */
+    .espaco_grid{
+        margin: 0 20px 0 20px;
+    }
+    #img_perfil_usuario{
+        width: 189.21px;
+        height: 189.21px;
+        margin-left: 45px;
+        margin-top: 187.79px;
+    }
+    .button_alterar_foto{
+        width: 72px;
+        height: 16px;
+        margin-left: 13px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        color:#B93200;
+        text-decoration-line: underline;
+
+    }
+    #titulo_editar_perfil{
+        margin-top: -255px;
+        margin-bottom: 245px;
+        color:#FE5517;
+        padding-bottom: 8%;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    #subtitulo_espaco{
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    #div_email{
+        padding-top:26px;
+        padding-bottom: 38.69px;
+    }
+    #div_repetir_senha{
+        padding-top:0;  
+    }
+    .aliamento_button{
+        margin-left:0;
+    }
+    .button_salvar{
+        text-align: center; 
+        height: 40px;
+        width: 235px;
+        margin-top: 44.64px;
+        margin-bottom: 44.64px;
+        margin-left: 30px;
+  
+    }
+
+
+
+ }

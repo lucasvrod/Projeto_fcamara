@@ -24,9 +24,9 @@ session_start();
 
 
 <body>
-    <header>
+     <header>
         <?php include 'layout/header.php';?>
-    </header>
+    </header> 
 
     <div class="espaco_grid">
         <form>
@@ -35,26 +35,35 @@ session_start();
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="img/teste.png" id="img_perfil_usuario">
-                                <br>
-                                <a href="#" id="alterar_foto" class="stretched-link ">ALTERAR FOTO</a>
+                                <div>
+                                    <img src="img/teste.png" id="img_perfil_usuario">
+                                </div>
+                                <div class="alterar_foto_button">
+                                    
+                                    <label for="fotoo"  title="Mudar Foto">
+                                        <a class="button_alterar_foto" >ALTERAR FOTO</a>
+       
+                                    </label> 
+                                    <input name="arquivo" type="file" id="fotoo" hidden>
+                                </div>
+  
                             </div>
 
                             <div class="col-md-8">
                                 <div class="row">
                                     <div class="col-md-6">
                                         
-                                            <H3 id="titulo_espaco">EDITAR PERFIL</H3>
+                                            <H3 id="titulo_editar_perfil">EDITAR PERFIL</H3>
                                       
                                             <h5 id="subtitulo_espaco">INFORMAÇÕES PESSOAIS</h5>
                                             
-                                        <div class="">
+                                        <div>
                                             <label for="formGroupExampleInput2">Como você quer ser chamado</label>
                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome">
                                         </div> 
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group div_email" >
+                                        <div class="form-group " id="div_email" >
                                             <label for="formGroupExampleInput2">Email *</label>
                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="email">
                                         </div> 
@@ -63,8 +72,8 @@ session_start();
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                            </div>
+                        <div class="col-md-4">
+                        </div>
                             <div class="col-md-8">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -79,17 +88,23 @@ session_start();
                                             <label for="formGroupExampleInput2">Nova senha</label>
                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nova senha">
                                         </div> 
-
                                     </div>
 
                                     <div class="col-md-6">
-                                        <div class="form-group  " id="div_repetir_senha">
+                                        <div class="form-group " id="div_repetir_senha">
                                             <label for="formGroupExampleInput2">Repetir nova senha *</label>
                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Repetir nova senha">
                                         </div>
-                                        <a href="index_fila.php" class="aliamento_button" id ="">CANCELAR</a>
+                                        <div class="row">
+                                            <div>
+                                                <a href="index_fila.php" class=" d-none d-sm-block" id ="button_CANCELAR">CANCELAR</a>
 
-                                        <button type="button" class="btn aliamento_button button_salvar"  data-toggle="modal" data-target="#modal_salvar">SALVAR ALTERAÇÕES</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn " id="button_salvar"  data-toggle="modal" data-target="#modal_salvar">SALVAR ALTERAÇÕES</button>
+                                            </div>
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -102,11 +117,8 @@ session_start();
     </div>
 
     <!--MODAL salvar -->
-
-  
-    <div class="modal fade" id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade " id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog " role="document">
             <form  action="_api/api.php" method="post">
                 <div class="modal-content cormodal">
                     <div class="modal-header text-center ">
@@ -132,15 +144,6 @@ session_start();
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-    
     <?php include 'layout/footer.php';?>
 
 </body>

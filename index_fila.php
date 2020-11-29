@@ -52,9 +52,9 @@ session_start();
                                     <div class="col-md-8">
                                         <div class="card-body "> 
                                             <H4 class="card_titulo">VIDEOGAME 01 </H4>
-                                            <h6 class="card_titulo">sala de descompressão</h6>                                
+                                            <h6 class="card_titulo" id="align_left">sala de descompressão</h6>                                
                                             <div class="card_numero_fila">
-                                                <H1><span class="">4 </span></H1>
+                                                <H1><span>4 </span></H1>
                                                 <div class="card_conteudo_fila">
                                                     <span>PESSOAS</span>  <br>      
                                                     <span >NA FILA</span><br>
@@ -489,6 +489,36 @@ session_start();
                             <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
                         </div>
                     </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL SAIR DA FILA-->
+
+    <div class="modal fade" id="modal_sair_fila" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_texto">Você tem certeza que deseja cancelar?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        
+                       <h6 class="cor_braco">Suas alterações não serão salvas.</h6>
+                        
+                    </div>
+                    <div class=" d-flex justify-content-center">
+
+                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" data-dismiss="modal">RETONAR</button>
+                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" >CANCELAR</button>
+
+
+                    </div>
                 </div>
             </form>
         </div>
