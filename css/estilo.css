@@ -134,6 +134,9 @@ h6{
 .cor_braco{
    color: #fff;
 }
+.cor_preta{
+    color: #000;
+ }
 
 .espaco_grid{
     margin: 0 8% 0 8%;
@@ -303,6 +306,14 @@ h6{
     margin-bottom: 10px;
 }
 
+.cor_header_card{
+    background-color: #FE5517;
+    border-radius: 40px 40px 0 0;
+}
+.cor_header_card_1{
+    background-color: #fff;
+    border-radius: 40px 40px 0 0;
+}
 
 
 
@@ -330,6 +341,12 @@ footer{
     color: #fff;
 }
 
+.cormodal_1{
+    background: #fff;
+    color: #000;
+}
+
+
 .modal_tamanho_cor{
     background: #36357e;
     color: #fff;
@@ -354,9 +371,18 @@ footer{
 }
 .modal_fila_espaco{
     margin-top: 6%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .modal_tamanho_botao{
+    height: 9%;
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.modal_tamanho_botao1{
     height: 9%;
     width: 50%;
     margin-top: 10%;

@@ -375,23 +375,15 @@ session_start();
     <div class="modal fade" id="modal_fila_VIDEOGAME01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center">
+                <div class="modal-content cormodal_1">
+                    <div class="modal-header text-center cor_header_card">
+
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png"  class="modal_icone_close">
                         </button>
                     </div>
-                    <div class="modal-body mx-3 ">
-                    
-                       <ul class=" modal_fila_numero">
-                        <li class="">
-                            <H1 class="cor_prin_02_texto">1</H1>
-                        </li>
-                        <li class="modal_fila_texto">
-                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
-                        </li>
-                    </ul>
+                   
 
                     <div class="modal_fila_espaco">
                         <input name="equipamento" type="text" value="1" hidden>
@@ -400,7 +392,8 @@ session_start();
                         <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
                     </div>
                     <div class=" d-flex justify-content-center">
-                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+
+                        <button type="button " class="btn button_fila modal_tamanho_botao1">ENTRA NA FILA</button>
                     </div>
                     </div>   
                 </div>
@@ -411,23 +404,13 @@ session_start();
     <div class="modal fade" id="modal_fila_VIDEOGAME02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center">
+                <div class="modal-content cormodal_1">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 02<br> escritório</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
                         </button>
                     </div>
-                    <div class="modal-body mx-3 ">
-                    
-                       <ul class=" modal_fila_numero">
-                        <li class="">
-                            <H1 class="cor_prin_02_texto">1</H1>
-                        </li>
-                        <li class="modal_fila_texto">
-                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
-                        </li>
-                    </ul>
 
                     <div class="modal_fila_espaco">
                         <input name="equipamento" type="text" value="1" hidden>
@@ -436,9 +419,8 @@ session_start();
                         <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
                     </div>
                     <div class=" d-flex justify-content-center">
-                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        <button type="button " class="btn button_fila modal_tamanho_botao1">ENTRA NA FILA</button>
                     </div>
-                    </div>   
                 </div>
             </form>
         </div>
@@ -447,23 +429,13 @@ session_start();
     <div class="modal fade" id="modal_fila_FLIPERAMA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center">
+                <div class="modal-content cormodal_1">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
                         </button>
                     </div>
-                    <div class="modal-body mx-3 ">
-                    
-                       <ul class=" modal_fila_numero">
-                        <li class="">
-                            <H1 class="cor_prin_02_texto">4</H1>
-                        </li>
-                        <li class="modal_fila_texto">
-                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
-                        </li>
-                    </ul>
 
                     <div class="modal_fila_espaco">
                         <input name="equipamento" type="text" value="1" hidden>
@@ -472,9 +444,9 @@ session_start();
                         <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
                     </div>
                     <div class=" d-flex justify-content-center">
-                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        <button type="button " class="btn button_fila modal_tamanho_botao1">ENTRA NA FILA</button>
                     </div>
-                    </div>   
+                       
                 </div>
             </form>
         </div>
@@ -483,23 +455,14 @@ session_start();
     <div class="modal fade" id="modal_fila_MESA_DE_JOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center">
+                <div class="modal-content cormodal_1">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br> sinuca | ping pong</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
                         </button>
                     </div>
-                    <div class="modal-body mx-3 ">
-                    
-                    <ul class=" modal_fila_numero">
-                        <li class="">
-                            <H1 class="cor_prin_02_texto">1</H1>
-                        </li>
-                        <li class="modal_fila_texto">
-                           <h6 class="cor_braco">SUA POSIÇÃO<BR> NA FILA</h6>
-                        </li>
-                    </ul>
+
 
                     <div class="modal_fila_espaco">
                         <input name="equipamento" type="text" value="1" hidden>
@@ -508,9 +471,9 @@ session_start();
                         <input type="text" class="form-control" placeholder="Nome do Jogo" aria-label="JOGO" aria-describedby="basic-addon1">
                     </div>
                     <div class=" d-flex justify-content-center">
-                        <button type="button " class="btn button_fila modal_tamanho_botao">ENTRA NA FILA</button>
+                        <button type="button " class="btn button_fila modal_tamanho_botao1">ENTRA NA FILA</button>
                     </div>
-                    </div>   
+                     
                 </div>
             </form>
         </div>
@@ -520,8 +483,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_videogame1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -533,7 +496,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -549,8 +512,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_videogame2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 02<br> escritório</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -562,7 +525,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            <h6 class="cor_preta">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -577,8 +540,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_FLIPERAMA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -590,7 +553,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -606,8 +569,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_MESADEJOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br>sinuca | ping pong</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -619,7 +582,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -664,8 +627,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_videogame1_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -677,7 +640,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -716,8 +679,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_videogame2_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -729,7 +692,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -768,8 +731,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_FLIPERAMA_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -781,7 +744,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -822,8 +785,8 @@ session_start();
     <div class="modal fade" id="modal_detalhe_fila_MESADEJOGOS_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal ">
-                    <div class="modal-header text-center ">
+                <div class="modal-content cormodal_1 ">
+                    <div class="modal-header text-center cor_header_card">
                         <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br>sinuca | ping pong</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png" class="modal_icone_close">
@@ -835,7 +798,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            <h6 class="cor_preta"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
