@@ -28,6 +28,7 @@ session_start();
             unset($_SESSION['msg']);
         }
         ?>
+        <div id='coluna1_calendario'>
         <div id='calendar'></div>
 
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -160,9 +161,12 @@ session_start();
                 </div>
             </div>
         </div>
-        <br>
-        <p> <button type="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" data-toggle="modal" data-target="#cadastrar">Agendar um Atividade</button></p>
-        <p><a href="relatorio.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Imprimir Atividades</a></p>
-        <br>
+        </div>
+        <div id='coluna2_calendario'>
+        
+        <p><center><button type="button" class="btn btn-primary btn-lg active medio" role="button" aria-pressed="true" data-toggle="modal" data-target="#cadastrar">Agendar um Atividade</button></center></p>
+        <p><center><a href="relatorio.php" class="btn btn-primary btn-lg active medio" role="button" aria-pressed="true">Imprimir Atividades</a></center></p>
+        
+        </div>
     </body>
 </html>
