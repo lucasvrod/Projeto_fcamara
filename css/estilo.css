@@ -126,27 +126,21 @@ H4{
     font-size: 32px;
     line-height: 39px;
 }
-h6{
-    font-family: 'Montserrat', sans-serif bold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    color: #000;
-    
-    
-} 
-
 h5{
     font-family: 'Montserrat', sans-serif bold;
     font-style: bold;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
 }
-
-
+h6{
+    font-family: 'Montserrat', sans-serif bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;    
+} 
 .texto_fila{
     margin: 5% 0 0 1%;
 } 
@@ -170,31 +164,37 @@ h5{
 }
 
  .card_fila{
-    width: auto;
+    width: 100%;
     height: auto;
-    background: #C4C4C4;
-    border-radius: 20px 20px 20px 20px;
+    background: #D4D4D4;
+    border-radius: 20px;
     
 }
 
 .card_img{
-    width: 120%;
-    height: 100.5%;  
-    border-radius: 20px 0 0 20px;
-    margin-top: -1px;
-    margin-left: -1px;
+    width: 119%;
+    height: auto;  
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left:8px;
     position: absolute;
+}
+#card_img_fila{
+    
 }
 
 .card_titulo{
-    margin: -4% 0 3% 10%;    
+    margin: -4% 0 0 -10%;    
 }
-#align_left{
-    text-align: left;
+#card_subtitulo{
+    padding:0 0 0 45px;
+    margin: 0 0 0 0;
 }
 
 .card_numero_fila{
     padding-left: 34%;
+    padding-top: 4%;
+    padding-bottom: 2.5%;
 }
 
 .card_conteudo_fila{
@@ -203,52 +203,84 @@ h5{
 }
 
 .card_button{
-    padding-left: 24%;
-    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 9%;
+    padding-top: 9%;
 }
 
+.button_sair_da_fila{
+    background-color: Transparent;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 4px;
+    text-align: center; 
+    height: 10%;
+    width: 110%; 
+    font-family: 'Montserrat', sans-serif bold;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+.button_sair_da_fila:hover{
+    background-color: #FE5517;
+    color:#fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+
+}
 .card_detalhe_icone{
     padding: 0 0 0 86.6px;
     margin: -7% -10px 0 0;
     }
 
 .card_detalhe_texto{
-    margin: -22% 0 0 13%;
+    margin: -22% 0 -5% 13%;
     text-decoration: underline ;
-    color: #000;   
+    color: #000;       
+}
+
+#detalhe_texto{
+    font-size: 13px;
 }
 
 .button_fila{
-    background-color: #FE5517;
+    background-color: #4F4E9C;
     color: #fff;
     text-decoration:none;
     border-radius: 4px;
     text-align: center; 
     height: 10%;
-    width: 85%;
-
+    width: 110%; 
+    font-family: 'Montserrat', sans-serif bold;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
 }
 .button_fila:hover{
-    background-color: #B93200;
+    background-color: #36357E;
     color: #fff;
 }
 
 
 .calendario{
-    padding: 10% 0 3% 0;
+    padding: 7% 0 7% 0;
 }
-.calendario_conteudo{
-    margin: 4% 0 4% 0;
-}
+
 #titulo_calen{
-    padding: 8% 0 0 0;
+    color: #FE5517;
+    padding-top: 22%;
 }
 #calen_texto{
-    padding: 6% 0 0 0;
+    padding-top: 3%;
     text-align: left;
-}
-#calen_button{
-    padding: 10% 0 0 0;
 }
 .calen_button{
     width: 50%;
@@ -260,6 +292,21 @@ h5{
     width: 92%;
     height: 92%;
 }
+#caledario_acesso{
+    float: left;
+    width: 50%;
+    height: 15%;
+    margin-top: 7%;
+}
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: #121225;
@@ -385,14 +432,33 @@ footer{
     border-radius: 4px;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 0px;
     width: auto;
+    height: auto;
     
 }
 .button_salvar:hover{
     background-color: #B93200;
     color: #fff;   
 }
+.button_salvar_modal{
+    background-color: #FE5517;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 43px;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+
+}
+.button_salvar:hover{
+    background-color: #B93200;
+    color: #fff;   
+}
+
+
 
 .modal_titulo{
     text-align: left;
@@ -660,13 +726,97 @@ footer{
     .button_salvar{
         border-radius: 4px;
         text-align: center;
-        margin-top: 36px;
-        width: 130px;
+        margin:44px 71px 44px 71px;
+        width: 235px;
         height: 40px;
+        background-color: #4F4E9C;
     }
     .button_salvar:hover{
-        background-color: #FE5517;
+        background-color: #4F4E9C;
     }
 
+    .button_salvar_modal{
+        background-color: #FE5517;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        width: 132px;
+        height: 40px;
+        margin-top: 40px;
+       
+    }
 
+    /* Pagina index_fila */
+    .card_fila{
+        width: 332px;
+        height: 192px;
+    }
+    .card_img{
+        width: 115.58px;
+        height: 176px;
+        left: 8px;
+        top: 8px;
+        border-radius: 20px 20px 20px 20px;
+        position: absolute;
+    }
+    .card_titulo{
+        width: 157.59px;
+        height: 50.13px; 
+        margin-left: 143.68px;
+        /* margin-top: 1px;    */
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000;
+    }
+    #card_subtitulo{
+        text-align: left;
+        left: 43.54%;
+        right: 9.53%;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: normal;
+        margin-top: -30px;
+    }
+    
+    .card_numero_fila{
+        left: 58.8%;
+        margin-right: 29.95%;
+        margin-top: -16%;
+        bottom: 50.28%;
+        margin-left: 60px;
+        font-size: 10px;
+    }
+    .card_conteudo_fila{
+        margin-top: -90px;
+        margin-left: 50px; 
+        font-family: 'Montserrat', sans-serif bold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        width: 10%;
+
+    }
+
+    
+    .card_button{
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .card_detalhe_icone{
+        padding: 0 0 0 0x;
+        margin: 0 0 0 0;
+        }
+
+    .card_detalhe_texto{
+        margin: 0 0 0 0;
+        text-decoration: underline ;
+        color: #000;   
+    }
+
+ 
  }

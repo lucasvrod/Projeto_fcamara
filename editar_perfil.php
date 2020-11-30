@@ -24,9 +24,9 @@ session_start();
 
 
 <body>
-     <!-- <header>
+     <header>
         <?php include 'layout/header.php';?>
-    </header>  -->
+    </header> 
 
     <div class="espaco_grid">
         <form>
@@ -112,6 +112,7 @@ session_start();
             </div>
         </form>
     </div>
+    <?php include 'layout/footer.php';?>
 
     <!--MODAL salvar -->
     <div class="modal fade" id="modal_salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
@@ -128,8 +129,8 @@ session_start();
                         
                         <h6 class="cor_braco" id="modal_texto_h7">Elas não poderão ser desfeitas.</h6>
         
-                        <button type="button" class="btn button_salvar" data-dismiss="modal">RETONAR</button>
-                        <button type="button" class="btn button_salvar" >SALVAR</button>
+                        <button type="button" class="btn button_salvar_modal" data-dismiss="modal">RETONAR</button>
+                        <button type="button" class="btn button_salvar_modal" >SALVAR</button>
                         
                     </div>
                 </div>
@@ -137,7 +138,7 @@ session_start();
         </div>
     </div>
 
-    <?php include 'layout/footer.php';?>
+    
 
 </body>
 

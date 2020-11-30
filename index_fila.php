@@ -26,48 +26,53 @@ session_start();
     
     <header>
         <?php include 'layout/header.php';?>
-    </header>
-    <div class="container ">
+    </header> 
+     <div class="container ">
         <div class="col-md-12" >
             <div class="texto_fila">
-                <H4 align="left" class="cor_prin_02_texto">ENTRE NA FILA E COMECE A JOGAR!</H2>
-                <p align="left">A FCÂMARA OFERECE UMA VARIEDADE DE JOGOS PARA AJUDAR NA ROTINA <br>
-                                DE TRABALHO. ESCOLHA UMA FILA, ACOMPANHE-A EM TEMPO REAL, SAIBA <br>
-                                QUANDO CHEGAR SUA VEZ, E <span class="cor_prin_02_texto">DESESTREESSA!</span></p>
+                <H4 align="left" class="cor_prin_02_texto">Escolha uma fila para jogar!</H2>
+                <p align="left">A FCÂMARA OFERECE UMA VARIEDADE DE JOGOS PARA AJUDAR NA ROTINA <br> 
+                    trabalho. Escolha uma fila, acompanhe-a, saiba quando chegar sua vez e <br>
+                     <span class="cor_prin_02_texto">DESESTREESSA!</span></p>
             </div>
         </div>
     </div>
 <!-- Começo  CARD -->
     <div class="espaco_grid">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
+
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
-                                    <div class="col-md-4 ">
-                                        <img src="img/fila/fila_videogame.jpg" class="card_img" alt="...">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/videogame1.png" class="card_img" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body "> 
-                                            <H4 class="card_titulo">VIDEOGAME 01 </H4>
-                                            <h6 class="card_titulo" id="align_left">sala de descompressão</h6>                                
+                                            <h5 class="card_titulo">VIDEOGAME 01 </h5>
+                                            <h6 id="card_subtitulo">sala de descompressão</h6>                                
                                             <div class="card_numero_fila">
                                                 <H1><span>4 </span></H1>
                                                 <div class="card_conteudo_fila">
-                                                    <span>PESSOAS</span>  <br>      
-                                                    <span >NA FILA</span><br>
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
                                                 </div>
                                             </div>
                                             <div class="card_button">                           
-                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">ENTRA NA FILA</button>
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Entrar na fila</button>
                                             </div>
+                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
+                                            <!-- <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
+                                            </div> -->
                                             <div class="card_detalhe_icone">
                                                 <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame1">
-                                                    <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
                                                     <div class="card_detalhe_texto">
-                                                        <span>Ver mais detalhes</span>  <br>      
+                                                        <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
                                                 </a>
                                             </div>
@@ -75,40 +80,39 @@ session_start();
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="col-md-6">
+
+
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
-                                    
-                                    <div class="col-md-4 ">
-                                        <img src="img/fila/fliperama7.jpg" class="card_img" alt="...">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/videogame2.png" class="card_img" alt="...">
                                     </div>
-                                
                                     <div class="col-md-8">
-                                        <div class="card-body ">
-                                            
-                                            <H4 class="card_titulo">FLIPERAMA</H4>
-                                            <h6 class="card_titulo"><br></h6>
-                                            
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo">VIDEOGAME 02 </h5>
+                                            <h6 id="card_subtitulo">escritório</h6>                                
                                             <div class="card_numero_fila">
-                                                <H1><span class="">4 </span></H1>
+                                                <H1><span>4 </span></H1>
                                                 <div class="card_conteudo_fila">
-                                                    <span>PESSOAS</span>  <br>      
-                                                    <span >NA FILA</span><br>
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
                                                 </div>
                                             </div>
-
-                                            <div class="card_button">
-                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_FLIPERAMA">ENTRA NA FILA</button>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME02">Entrar na fila</button>
                                             </div>
-
+                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
+                                            <!-- <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
+                                            </div> -->
                                             <div class="card_detalhe_icone">
-                                                <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_FLIPERAMA">
-                                                    <H1><span class="">  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                                    
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame2">
+                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
                                                     <div class="card_detalhe_texto">
-                                                        <span>Ver mais detalhes</span>  <br>      
-                                                    
+                                                        <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
                                                 </a>
                                             </div>
@@ -120,39 +124,34 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
-                                    
-                                    <div class="col-md-4 ">
-                                        <img src="img/fila/fila_videogame1.jpg" class="card_img" alt="...">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/fliperama.png" class="card_img" alt="...">
                                     </div>
-                                
                                     <div class="col-md-8">
-                                        <div class="card-body ">
-                                            
-                                            <H4 class="card_titulo">VIDEOGAME 02 </H4>
-                                            <h6 class="card_titulo">escritório</h6>
-                                            
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo">FLIPERAMA </h5>
+                                            <h6 id="card_subtitulo"><br></h6>                                
                                             <div class="card_numero_fila">
-                                                <H1><span >5 </span></H1>
+                                                <H1><span>4 </span></H1>
                                                 <div class="card_conteudo_fila">
-                                                    <span>PESSOAS</span>  <br>      
-                                                    <span >NA FILA</span><br>
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
                                                 </div>
                                             </div>
-
-                                            <div class="card_button"> 
-                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME02">ENTRA NA FILA</button>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_FLIPERAMA">Entrar na fila</button>
                                             </div>
-
+                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
+                                            <!-- <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
+                                            </div> -->
                                             <div class="card_detalhe_icone">
-                                                <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_videogame2">
-                                                    <H1><span >  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
-                                                    
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_FLIPERAMA">
+                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
                                                     <div class="card_detalhe_texto">
-                                                        <span>Ver mais detalhes</span>  <br>      
-                                                    
+                                                        <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
                                                 </a>
                                             </div>
@@ -160,39 +159,44 @@ session_start();
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="col-md-6">
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
-                                    <div class="col-md-4 ">
-                                        <img src="img/fila/sinu.png" class="card_img" alt="...">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/sinuca.png" class="card_img" alt="...">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body ">
-                                            <H4 class="card_titulo">MESA DE JOGOS </H4>
-                                            <h6 class="card_titulo">sinuca | ping pong</h6>                                            
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo">MESA DE JOGOS </h5>
+                                            <h6 id="card_subtitulo">sinuca | ping pong</h6>                                
                                             <div class="card_numero_fila">
-                                                <H1><span class="">4 </span></H1>
+                                                <H1><span>4 </span></H1>
                                                 <div class="card_conteudo_fila">
-                                                    <span>PESSOAS</span>  <br>      
-                                                    <span >NA FILA</span><br>
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
                                                 </div>
                                             </div>
-                                            <div class="card_button">
-                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_MESA_DE_JOGOS">ENTRA NA FILA</button>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_MESA_DE_JOGOS">Entrar na fila</button>
                                             </div>
+                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
+                                            <!-- <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
+                                            </div> -->
                                             <div class="card_detalhe_icone">
-                                                <a href="#"  data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS">
-                                                    <H1><span >  <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho" > </span></H1>
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS">
+                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
                                                     <div class="card_detalhe_texto">
-                                                        <span>Ver mais detalhes</span>  <br>  
+                                                        <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,19 +212,19 @@ session_start();
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 ">
-                            <div class="calendario_conteudo">
-                                <H3 class="cor_prin_01_texto" id="titulo_calen"> CALENDÁRIO DE <BR>ATIVIDADES</H3>
-                                <h5 id="calen_texto">Agende uma noite de board game, organize um 
-                                    campeonato de videogame ou cheque quando 
-                                    haverá ginástica laboral na sede: </h5>
-                                <div id="calen_button">
-                                    <a href="calendario.php" type="button" class="btn button_fila calen_button" >ACESSAR AQUI</a>
+                            <div >
+                                <H4 id="titulo_calen"> CALENDÁRIO DE ATIVIDADES</H4>
+                                <h6 id="calen_texto">Aqui você pode agendar uma noite de board games, organizar um<BR>
+                                    campeonato de videogame ou checar quando haverá ginástica laboral na
+                                    sede. Encontre seus amigos e divirta-se! </h6>
+                                <div>
+                                    <a href="calendario.php" type="button" class="btn button_fila" id="caledario_acesso" alt="button para acessar tela do calendario">Acessar aqui</a>
                                 </div>
                             </div>      
                         </div>
                         <div class="col-md-6">
                             <div  class="calendario_img">
-                                <img src="img/caledario.jpg "alt="caledario">
+                                <img src="img/caledario.png"alt="caledario">
                             </div>
                         </div>
                     </div>
