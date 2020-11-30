@@ -22,10 +22,10 @@ $update_event->bindParam(':end', $data_end_conv);
 $update_event->bindParam(':id', $dados['id']);
 
 if ($update_event->execute()) {
-    $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">Evento ou board game editado com sucesso!</div>'];
-    $_SESSION['msg'] = '<div class="alert alert-success" role="alert">Evento ou board game editado com sucesso!</div>';
+    $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">Atividade editado com sucesso!</div>'];
+    $_SESSION['msg'] = '<div class="alert alert-success" role="alert">Atividade editado com sucesso!</div>';
 } else {
-    $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">Erro: Evento ou board game não foi editado com sucesso!</div>'];
+    $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">Erro: Atividade não foi editado com sucesso!</div>'];
 }
 
 

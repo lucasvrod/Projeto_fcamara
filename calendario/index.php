@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Calendário de Eventos e Board Games</title>
+        <title>Calendário de Atividades</title>
         <meta charset='utf-8' />
         <link href='css/core/main.min.css' rel='stylesheet' />
         <link href='css/daygrid/main.min.css' rel='stylesheet' />
@@ -31,10 +31,10 @@ session_start();
         <div id='calendar'></div>
 
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Detalhes do Evento ou Board Game</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Detalhe da Atividade</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -42,8 +42,6 @@ session_start();
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
-                                <dt class="col-sm-3">ID</dt>
-                                <dd class="col-sm-9" id="id"></dd>
 
                                 <dt class="col-sm-3">Título</dt>
                                 <dd class="col-sm-9" id="title"></dd>
@@ -64,7 +62,7 @@ session_start();
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Título</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="title" class="form-control" id="title" placeholder="Nome do evento ou board game">
+                                        <input type="text" name="title" class="form-control" id="title" placeholder="Nome da atividade">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -72,16 +70,12 @@ session_start();
                                     <div class="col-sm-10">
                                         <select name="color" class="form-control" id="color">
                                             <option value="">Selecione</option>			
-                                            <option style="color:#FFD700;" value="#FFD700">Amarelo</option>
-                                            <option style="color:#0071c5;" value="#0071c5">Azul Turquesa</option>
-                                            <option style="color:#FF4500;" value="#FF4500">Laranja</option>
-                                            <option style="color:#8B4513;" value="#8B4513">Marrom</option>	
-                                            <option style="color:#1C1C1C;" value="#1C1C1C">Preto</option>
-                                            <option style="color:#436EEE;" value="#436EEE">Royal Blue</option>
-                                            <option style="color:#A020F0;" value="#A020F0">Roxo</option>
-                                            <option style="color:#40E0D0;" value="#40E0D0">Turquesa</option>
-                                            <option style="color:#228B22;" value="#228B22">Verde</option>
-                                            <option style="color:#8B0000;" value="#8B0000">Vermelho</option>
+                                            <option style="color:#5CB0FE;" value="#5CB0FE">Azul</option>
+                                            <option style="color:#A5F9D0;" value="#A5F9D0">Verde</option>
+                                            <option style="color:#B69D94;" value="#B69D94">Tigro</option>
+                                            <option style="color:#E1AAF4;" value="#E1AAF4">Roxo</option>	
+                                            <option style="color:#E9E6A0;" value="#E9E6A0">Oliveira</option>
+                                            <option style="color:#FE885C;" value="#FE885C">Laranja</option>
                                         </select>
                                     </div>
                                 </div>
@@ -101,7 +95,7 @@ session_start();
                                 <div class="form-group row">
                                     <div class="col-sm-10">
                                         <button type="button" class="btn btn-primary btn-canc-edit">Cancelar</button>
-                                        <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-warning">Atualizar</button>                                    
+                                        <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-warning">Salvar</button>                                    
                                     </div>
                                 </div>
                             </form>                            
@@ -112,10 +106,10 @@ session_start();
         </div>
 
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Cadastrar Evento ou Board Game</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Que atividade você quer cadastrar hoje ?</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -126,7 +120,7 @@ session_start();
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Título</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="title" class="form-control" id="title" placeholder="Nome do evento ou board game">
+                                    <input type="text" name="title" class="form-control" id="title" placeholder="Nome do atividade">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -134,16 +128,12 @@ session_start();
                                 <div class="col-sm-10">
                                     <select name="color" class="form-control" id="color">
                                         <option value="">Selecione</option>			
-                                        <option style="color:#FFD700;" value="#FFD700">Amarelo</option>
-                                        <option style="color:#0071c5;" value="#0071c5">Azul Turquesa</option>
-                                        <option style="color:#FF4500;" value="#FF4500">Laranja</option>
-                                        <option style="color:#8B4513;" value="#8B4513">Marrom</option>	
-                                        <option style="color:#1C1C1C;" value="#1C1C1C">Preto</option>
-                                        <option style="color:#436EEE;" value="#436EEE">Royal Blue</option>
-                                        <option style="color:#A020F0;" value="#A020F0">Roxo</option>
-                                        <option style="color:#40E0D0;" value="#40E0D0">Turquesa</option>
-                                        <option style="color:#228B22;" value="#228B22">Verde</option>
-                                        <option style="color:#8B0000;" value="#8B0000">Vermelho</option>
+                                        <option style="color:#5CB0FE;" value="#5CB0FE">Azul</option>
+                                        <option style="color:#A5F9D0;" value="#A5F9D0">Verde</option>
+                                        <option style="color:#B69D94;" value="#B69D94">Tigro</option>
+                                        <option style="color:#E1AAF4;" value="#E1AAF4">Roxo</option>	
+                                        <option style="color:#E9E6A0;" value="#E9E6A0">Oliveira</option>
+                                        <option style="color:#FE885C;" value="#FE885C">Laranja</option>
                                     </select>
                                 </div>
                             </div>
@@ -170,5 +160,9 @@ session_start();
                 </div>
             </div>
         </div>
+        <br>
+        <p> <button type="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" data-toggle="modal" data-target="#cadastrar">Agendar um Atividade</button></p>
+        <p><a href="relatorio.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Imprimir Atividades</a></p>
+        <br>
     </body>
 </html>

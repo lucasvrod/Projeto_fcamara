@@ -13,13 +13,13 @@ if (!empty($id)) {
     $delete_event->bindParam("id", $id);
     
     if($delete_event->execute()){
-        $_SESSION['msg'] = '<div class="alert alert-success" role="alert">O evento ou board game foi apagado com sucesso!</div>';
+        $_SESSION['msg'] = '<div class="alert alert-success" role="alert">Atividade foi apagado com sucesso!</div>';
         header("Location: index.php");
     }else{
-        $_SESSION['msg'] = '<div class="alert alert-danger" role="alert">Erro: O evento ou board game não foi apagado com sucesso!</div>';
+        $_SESSION['msg'] = '<div class="alert alert-danger" role="alert">Erro: Atividade não foi apagado com sucesso!</div>';
         header("Location: index.php");
     }
 } else {
-    $_SESSION['msg'] = '<div class="alert alert-danger" role="alert">Erro: O evento ou board game não foi apagado com sucesso!</div>';
+    $_SESSION['msg'] = '<div class="alert alert-danger" role="alert">Erro: Atividade não foi apagado com sucesso!</div>';
     header("Location: index.php");
 }
