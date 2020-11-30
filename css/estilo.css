@@ -267,6 +267,9 @@ h6{
     padding: 7% 0 7% 0;
 }
 
+.calendario_conteudo a {
+    color: #FE5517;
+}
 #titulo_calen{
     color: #FE5517;
     padding-top: 22%;
@@ -544,10 +547,10 @@ footer{
 
 .topnav {
     width: 100%;
-    height: 52em;
+    height: 512px;
     background: linear-gradient(180deg, rgba(254, 85, 23, 0.374) 15.1%, 
     rgba(254, 102, 46, 0.0825) 46.35%), rgba(254, 102, 46, 0.75);
-    background-image: url("../img/fila/fila_videogame.jpg");
+    background-image: url("../img/home/videogame control.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -563,25 +566,23 @@ footer{
 
 #h1-topnav {
     position: absolute;
-    width: 665.43px;
+    width: 400px;
     height: 153.05px;
     left: 96px;
-    top: 520.46px;
-    font-family:'Montserrat', sans-serif bold;
+    top: 230px;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 32px;
+    line-height: 39px;
     color: #FFFFFF;
 }
 
 #p-topnav {
     position: absolute;
-    width: 640px;
+    width: 400px;
     height: 93.31px;
     left: 99px;
-    top: 684.53px;
-    font-family:'Montserrat', sans-serif bold;
+    top: 330px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -619,14 +620,15 @@ footer{
 .img-cards-index{
     height: 100%;
     border-radius: 20px 20px 0 0px;
+    margin: 5px;
 }
 
 .cards-retangle {
-    background: #A8A8D0;
+    background: #D4D4D4;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px 20px 20px 20px;
     width: 238px;
-    height: 400px;
+    height: 340px;
     margin: 0 10px;
 }
 
@@ -679,15 +681,12 @@ footer{
 }
 
 .session_mobile{
-    padding: 10% 0 3% 0;
     background: #FE885C;
     height: 500px;
 }
 
 #imgHome {
-    width: 400px;
-    top: 3;
-    margin: -100px 0 0 150px;
+    width: 100%;
 }
 
 #h3-session-mobile {
@@ -708,7 +707,7 @@ footer{
 }
 
 .button-modal {
-    background-color: #FE5517;
+    background-color: #4F4E9C;
     color: #fff;
     text-decoration:none;
     height: 48px;
@@ -931,5 +930,13 @@ footer{
         color: #000;   
     }
 
- 
+ }
+
+ .card-pessoas-fila {
+     text-align: center;
+     color: #36357E;
+ }
+
+ .logo img {
+    margin: 0 0 0 80px;
  }

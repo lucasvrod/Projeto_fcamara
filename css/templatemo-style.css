@@ -1107,7 +1107,7 @@ svg {
 }
 */
 .modal-content {
-    background:#36357E;
+    background: white;
     border-radius: 50px;
     width: 400px;
     margin: 0 auto;

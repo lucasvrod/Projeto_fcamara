@@ -25,7 +25,7 @@ session_start();
     <nav class="navbar navbar-dark default-color ">
         <a href="index.php">
             <div class="logo">
-                <img src="img/logo.png" alt="FIFO Logo">
+                <img src="img/LOGO BRANCA COM FCAMARA 1.png" alt="FIFO Logo">
             </div>
         </a>
         <form class="form-inline my-2 my-lg-0 ml-auto">
@@ -36,7 +36,6 @@ session_start();
     <h1 id="h1-topnav">O SITE DE JOGOS DA FCÂMARA</h1>
     <p id="p-topnav">O FIFO reúne todas as informações que você precisa para acessar de forma rápida
         e fácil as jogatinas e outras atividades disponíveis para você na sua sede!
-        <a href="#">CADASTRE-SE</a>
     </p>
     </div>
 
@@ -51,47 +50,33 @@ session_start();
                 <div class="cards-retangle" >
                     <div class="row no-gutters">
                         <div id="img-card1">
-                            <img src="img/fila/fila_videogame.jpg" class="img-cards-index" alt="...">
+                            <img src="img/home/videogame01.png" class="img-cards-index" alt="...">
                         </div>
                         <div>
                             <div class="card-body-index">
                                 <H4 class="card-titulo-index">VIDEOGAME 01</H4>
                                 <h7 class="card-desc-index">sala de descompressão</h7>
-                                <div>
-                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
+                                <div class="card-pessoas-fila">
                                     <span class="quantidade-pessoas-fila">1</span>
-                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
-                                </div>
-                                <div class="card-details">
-                                    <a href="#">
-                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
-                                        <a href="#">Ver mais detalhes</a>      
-                                    </a>
+                                    <span style="font-size: 10px">JOGADOR NA FILA</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="cards-retangle" >
                     <div class="row no-gutters">
                         <div id="img-card1">
-                            <img src="img/fila/fila_videogame1.jpg" class="img-cards-index" alt="...">
+                            <img src="img/home/videogame02.png" class="img-cards-index" alt="...">
                         </div>
                         <div>
                             <div class="card-body-index">
                                 <H4 class="card-titulo-index">VIDEOGAME 02</H4>
                                 <h7 class="card-desc-index">escritório</h7>
-                                <div>
-                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
-                                    <span class="quantidade-pessoas-fila">5</span>
-                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
-                                </div>
-                                <div class="card-details">
-                                    <a href="#">
-                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
-                                        <a href="#">Ver mais detalhes</a>      
-                                    </a>
+                                <div class="card-pessoas-fila">
+                                    <span class="quantidade-pessoas-fila">3</span>
+                                    <span style="font-size: 10px">JOGADORES NA FILA</span>
                                 </div>
                             </div>
                         </div>
@@ -101,22 +86,15 @@ session_start();
                 <div class="cards-retangle" >
                     <div class="row no-gutters">
                         <div id="img-card1">
-                            <img src="img/fliperama-index.png" class="img-cards-index-exp" alt="...">
+                            <img src="img/home/fliperama.png" class="img-cards-index" alt="...">
                         </div>
                         <div>
                             <div class="card-body-index">
                                 <H4 class="card-titulo-index">FLIPERAMA</H4>
-                                <h7 class="card-desc-index"></h7>
-                                <div>
-                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
-                                    <span class="quantidade-pessoas-fila">6</span>
-                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
-                                </div>
-                                <div class="card-details">
-                                    <a href="#">
-                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
-                                        <a href="#">Ver mais detalhes</a>      
-                                    </a>
+                                <h7 class="card-desc-index">escritório</h7>
+                                <div class="card-pessoas-fila">
+                                    <span class="quantidade-pessoas-fila">2</span>
+                                    <span style="font-size: 10px">JOGADORES NA FILA</span>
                                 </div>
                             </div>
                         </div>
@@ -126,22 +104,15 @@ session_start();
                 <div class="cards-retangle" >
                     <div class="row no-gutters">
                         <div id="img-card1">
-                            <img src="img/sinuca-index.png" class="img-cards-index-exp" alt="...">
+                            <img src="img/home/jogo de mesa.png" class="img-cards-index" alt="...">
                         </div>
                         <div>
                             <div class="card-body-index">
-                                <H4 class="card-titulo-index">MESA DE JOGOS</H4>
+                                <H4 class="card-titulo-index">JOGO DE MESA</H4>
                                 <h7 class="card-desc-index">sinuca | ping pong</h7>
-                                <div>
-                                    <img src="img/icones/icon 5.png" class="card-icon" alt="...">
-                                    <span class="quantidade-pessoas-fila">5</span>
-                                    <span style="font-size: 10px">PESSOAS NA FILA</span>
-                                </div>
-                                <div class="card-details">
-                                    <a href="#">
-                                        <img src="img/icones/eye-4x.png" width="20" height="20" alt="Icone olho">
-                                        <a href="#">Ver mais detalhes</a>      
-                                    </a>
+                                <div class="card-pessoas-fila">
+                                    <span class="quantidade-pessoas-fila">6</span>
+                                    <span style="font-size: 10px">JOGADORES NA FILA</span>
                                 </div>
                             </div>
                         </div>
@@ -158,13 +129,13 @@ session_start();
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="calendario_conteudo">
-                                <H3 class="cor_prin_01_texto" id="titulo_calen">
+                                <H3 class="cor_prin_02_texto" id="titulo_calen">
                                 QUE TAL AGENDAR UMA ATIVIDADE?</H3>
-                                <h5 id="calen_texto">Quer marcar noites de board 
-                                game, organizar um campeonato de viodegames, ou 
-                                checar quando haverá ginástica laboral na sede?
+                                <h5 id="calen_texto">Quer marcar noites de <b>board 
+                                game</b>, organizar um </b>campeonato de viodegames</b> ou 
+                                checar quando haverá <b>ginástica laboral</b> na sede?
                                 Com o nosso calendário de atividades você pode 
-                                fazer tudo isso. Acesse seu perfil e experimente agora!</h5>
+                                fazer tudo isso. <a href="#">Acesse seu perfil</a> e experimente agora!</h5>
                             </div>      
                         </div>
                         <div class="col-md-6">
@@ -179,7 +150,9 @@ session_start();
     </div>
 
     <div class="session_mobile">
-        <div class="col-md-12">
+    <img id="imgHome" src="img/session_mobile.png" alt="FIFO" align="left">
+
+        <!-- <div class="col-md-12">
             <div>
                 <img id="imgHome" src="img/mobile3 1.png" alt="FIFO" align="left">
             </div>
@@ -187,7 +160,7 @@ session_start();
             <h5 id="h5-session-mobile" align="left">Simples! É só entrar pela plataforma no seu celular
                 para ter acesso a todas as vantagens do FIFO!
             </h5>
-        </div>
+        </div> -->
     </div>
 
     <?php include 'layout/footer.php';?>
@@ -204,13 +177,14 @@ session_start();
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form action="_api/login.php" method="post">
-                    <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold" style="color: white;">LOGIN</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header text-center" style="color: white;background: #FE5517;border-radius: 35px 35px 0 0;height: 177px; display: revert;">
+                        <img src="img/LOGO BRANCA COM FCAMARA 1.png" style="width: 100px;" alt="FIFO Logo">
+                        <h6 class="modal-title w-100 font-weight-bold" style="color: white; margin-top: 30px;">ACESSE SUA CONTA</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -150px;">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3" style="color: white;">
+                    <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <label data-error="wrong" data-success="right" for="defaultForm-email">Email</label>
                             <input name="email" type="email" id="defaultForm-email" class="form-control validate"
@@ -247,13 +221,14 @@ session_start();
         <div class="modal-dialog" role="document">
             <form  action="_api/cadastro.php" method="post">
                 <div class="modal-content">
-                    <div class="modal-header text-center" style="color: white;">
-                        <h4 class="modal-title w-100 font-weight-bold">CADASTRO</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header text-center" style="color: white;background: #FE5517;border-radius: 35px 35px 0 0;height: 177px; display: inline-table;">
+                        <img src="img/LOGO BRANCA COM FCAMARA 1.png" style="width: 100px; margin-bottom: 20px;" alt="FIFO Logo">
+                        <h6 class="modal-title w-100 font-weight-bold" style="color: white;">CADASTRE-SE E DIVIRTA-SE</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -120px;">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3" style="color: white;">
+                    <div class="modal-body mx-3">
                         <div class="md-form mb-4">
                             <label data-error="wrong" data-success="right" for="defaultForm-apelido">Como você gostaria
                                 de
@@ -286,6 +261,8 @@ session_start();
                     <div class="modal-footer d-flex justify-content-center">
                         <input type="submit" name="cadastro" class="button-modal">
                     </div>
+                    <span style="text-align: center; padding-bottom: 20px">ou <a href="#">faça login</a></span>
+
                 </div>
             </form>
         </div>
