@@ -16,39 +16,65 @@
 </head>
 
 <header class="header">
-    <div class="container ">
-        <div class="col-md-12" >
-            <div class="row" >
-                <div>
-                    <a href="index_fila.php" >
-                        <div class="logo">
-                            <img src="img/LOGO.png" id="img_logo" alt="FIFO Logo">
-                        </div>
-                    </a>
-                </div>    
-                
-                <div class="btn-group dropdowns_btn  ">
-                    <button type="button" class="btn dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="img/Vector.png">
-                    </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="index_fila.php" >
+                    <div class="logo">
+                        <img src="img/LOGO_BRANCA.png" id="img_logo" alt="FIFO Logo">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+            <div class="btn-group dropdowns_btn  ">
+                        <button type="button" class="btn dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/Vector.png">
+                        </button>
 
-                    <div class="dropdown-menu header_dropdowns">
-                        <a class="dropdown-item header_dropdowns" href="index_fila.php" >PÁGINA INICIAL</a>
-                        <a class="dropdown-item header_dropdowns" href="editar_perfil.php">EDITAR PERFIL</a>
-                        <a class="dropdown-item header_dropdowns" href="index.php">SAIR</a>  
+                        <div class="dropdown-menu header_dropdowns">
+                            <a class="dropdown-item header_dropdowns" href="index_fila.php">Página inicial</a>
+                            <a class="dropdown-item header_dropdowns" href="editar_perfil.php">Editar perfil</a>
+                            <a class="dropdown-item header_dropdowns" href="calendario.php">Calendário</a>
+                            <a class="dropdown-item header_dropdowns" href="#"></a>
+                            <a class="dropdown-item header_dropdowns" href="index.php">sair da conta</a>  
+                        </div>
+
+                    </div> 
+            </div>
+            <div class="col-md-4 ">
+                    <div class="te4">
+  
+                    <div >
+                        <h6 id="header_nome" >Olá, MARCOS. <br>Bem vindo(a)</h6>
                     </div>
 
-                </div> 
-                <div id="headar_espacamento">
-                    <h6 id="header_nome" >Olá, MARCOS. <br>Bem vindo(a)</h6>
+                    <div>
+                        <img src="img/teste.png" id="perfil" alt="FIFO Logo">
+                    </div>
                 </div>
-
-                <div>
-                    <img src="img/teste.png" id="perfil" alt="FIFO Logo">
-                </div>
-                
             </div>
         </div>
     </div>
-</header>  
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

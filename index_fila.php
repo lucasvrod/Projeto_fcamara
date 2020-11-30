@@ -31,9 +31,9 @@ session_start();
         <div class="col-md-12" >
             <div class="texto_fila">
                 <H4 align="left" class="cor_prin_02_texto">Escolha uma fila para jogar!</H2>
-                <p align="left">A FCÂMARA OFERECE UMA VARIEDADE DE JOGOS PARA AJUDAR NA ROTINA <br> 
-                    trabalho. Escolha uma fila, acompanhe-a, saiba quando chegar sua vez e <br>
-                     <span class="cor_prin_02_texto">DESESTREESSA!</span></p>
+                <h6 align="left" id="texto_fila_a">A Fcamara oferece uma <b>variedade de jogos</b> para ajudar na sua rotina de  <br> 
+                    trabalho. <b>Escolha uma fila,</b> acompanhe-a, saiba quando chegar sua vez e  <br>
+                     <span class="cor_prin_02_texto">desestreeessa!!</span></h6>
             </div>
         </div>
     </div>
@@ -44,10 +44,10 @@ session_start();
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-
+                            <!-- Card normal -->
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
-                                    <div class="col-md-4" id="card_img_fila">
+                                    <div class="col-md-4" >
                                         <img src="img/fila/videogame1.png" class="card_img" alt="...">
                                     </div>
                                     <div class="col-md-8">
@@ -64,27 +64,60 @@ session_start();
                                             <div class="card_button">                           
                                                 <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Entrar na fila</button>
                                             </div>
-                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
-                                            <!-- <div class="card_button">                           
-                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
-                                            </div> -->
-                                            <div class="card_detalhe_icone">
+
+                                            <div class="card_modaldetalhe">
                                                 <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame1">
-                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
+                                                 
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
                                                     <div class="card_detalhe_texto">
                                                         <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
+                                                    </div>
+                                                </a> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card fila -->
+                            <!-- <div class="card mb-3 card_fila_dentro" >
+                                <div class="row no-gutters">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/videogame1.png" class="card_img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo cor_braco">VIDEOGAME 01 </h5>
+                                            <h6 id="card_subtitulo" class="cor_braco">sala de descompressão</h6>                                
+                                            <div class="card_numero_fila cor_braco">
+                                                <H1 ><span>4 </span></H1>
+                                                <div class="card_conteudo_fila cor_braco">
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_sair_fila_videogame1">Sair da fila</button>
+                                            </div>
+                                            <div class="card_modaldetalhe" >
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame1_ativo">
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
+                                                    <div class="card_detalhe_texto_ativo">
+                                                        <span id="detalhe_texto" class="cor_braco">Ver mais detalhes</span>  <br>      
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                         <div class="col-md-6">
-
-
+                            <!-- Card normal -->
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
                                     <div class="col-md-4" id="card_img_fila">
@@ -104,13 +137,11 @@ session_start();
                                             <div class="card_button">                           
                                                 <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME02">Entrar na fila</button>
                                             </div>
-                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
-                                            <!-- <div class="card_button">                           
-                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
-                                            </div> -->
-                                            <div class="card_detalhe_icone">
+
+                                            <div class="card_modaldetalhe">
                                                 <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame2">
-                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
                                                     <div class="card_detalhe_texto">
                                                         <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
@@ -120,10 +151,46 @@ session_start();
                                     </div>
                                 </div>
                             </div>
+                            <!-- Card fila -->
+                            <!-- <div class="card mb-3 card_fila_dentro" >
+                                <div class="row no-gutters">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/videogame2.png" class="card_img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo cor_braco">VIDEOGAME 02 </h5>
+                                            <h6 id="card_subtitulo" class="cor_braco">escritório</h6>                                
+                                            <div class="card_numero_fila cor_braco">
+                                                <H1><span>4 </span></H1>
+                                                <div class="card_conteudo_fila cor_braco">
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
+                                                </div>
+                                            </div>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_sair_fila_videogame2">Sair da fila</button>
+                                            </div>
+
+                                            <div class="card_modaldetalhe">
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_videogame2_ativo">
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
+                                                    <div class="card_detalhe_texto">
+                                                        <span id="detalhe_texto"class="cor_braco">Ver mais detalhes</span>  <br>      
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
+                            <!-- Card normal -->
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
                                     <div class="col-md-4" id="card_img_fila">
@@ -143,13 +210,11 @@ session_start();
                                             <div class="card_button">                           
                                                 <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_FLIPERAMA">Entrar na fila</button>
                                             </div>
-                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
-                                            <!-- <div class="card_button">                           
-                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
-                                            </div> -->
-                                            <div class="card_detalhe_icone">
+
+                                            <div class="card_modaldetalhe">
                                                 <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_FLIPERAMA">
-                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
                                                     <div class="card_detalhe_texto">
                                                         <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
@@ -160,8 +225,44 @@ session_start();
                                 </div>
                             </div>
 
+                            <!-- Card fila -->
+                            <!-- <div class="card mb-3 card_fila_dentro" >
+                                <div class="row no-gutters">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/fliperama.png" class="card_img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo cor_braco">FLIPERAMA </h5>
+                                            <h6 id="card_subtitulo" class="cor_braco"><br></h6>                                
+                                            <div class="card_numero_fila cor_braco">
+                                                <H1><span>4 </span></H1>
+                                                <div class="card_conteudo_fila cor_braco">
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
+                                                </div>
+                                            </div>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_sair_fila_FLIPERAMA">Entrar na fila</button>
+                                            </div>
+
+                                            <div class="card_modaldetalhe">
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_FLIPERAMA_ativo">
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
+                                                    <div class="card_detalhe_texto">
+                                                        <span id="detalhe_texto" class="cor_braco">Ver mais detalhes</span>  <br>      
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
                         </div>
                         <div class="col-md-6">
+                            <!-- Card normal -->
                             <div class="card mb-3 card_fila" >
                                 <div class="row no-gutters">
                                     <div class="col-md-4" id="card_img_fila">
@@ -181,13 +282,11 @@ session_start();
                                             <div class="card_button">                           
                                                 <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_fila_MESA_DE_JOGOS">Entrar na fila</button>
                                             </div>
-                                            <!-- BOTÃO QUANDO ESTA NA FILA -->
-                                            <!-- <div class="card_button">                           
-                                                <button type="button" class="btn button_sair_da_fila" data-toggle="modal" data-target="#modal_fila_VIDEOGAME01">Sair da fila</button>
-                                            </div> -->
-                                            <div class="card_detalhe_icone">
+
+                                            <div class="card_modaldetalhe">
                                                 <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS">
-                                                    <H1><img src="img/icones/eye-4x.png" width="16" height="16" alt="Icone olho" ></H1>
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
                                                     <div class="card_detalhe_texto">
                                                         <span id="detalhe_texto">Ver mais detalhes</span>  <br>      
                                                     </div>
@@ -197,6 +296,41 @@ session_start();
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card fila -->
+                            <!-- <div class="card mb-3 card_fila_dentro" >
+                                <div class="row no-gutters">
+                                    <div class="col-md-4" id="card_img_fila">
+                                        <img src="img/fila/sinuca.png" class="card_img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body "> 
+                                            <h5 class="card_titulo cor_braco">MESA DE JOGOS </h5>
+                                            <h6 id="card_subtitulo" class="cor_braco">sinuca | ping pong</h6>                                
+                                            <div class="card_numero_fila cor_braco">
+                                                <H1><span>4 </span></H1>
+                                                <div class="card_conteudo_fila cor_braco">
+                                                    <span>Jogador</span>  <br>      
+                                                    <span >na fila</span><br>
+                                                </div>
+                                            </div>
+                                            <div class="card_button">                           
+                                                <button type="button" class="btn button_fila" data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS">Entrar na fila</button>
+                                            </div>
+
+                                            <div class="card_modaldetalhe">
+                                                <a href="#" data-toggle="modal" data-target="#modal_detalhe_fila_MESADEJOGOS_ativo">
+                                                    <img src="img/icones/eye-4x.png" width="16" height="16" class="card_olho_icone" alt="Icone olho">
+                                                    
+                                                    <div class="card_detalhe_texto">
+                                                        <span id="detalhe_texto" class="cor_braco">Ver mais detalhes</span>  <br>      
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -399,7 +533,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -456,7 +590,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -468,8 +602,7 @@ session_start();
         </div>
     </div>
     
-
-        <!--MODAL de detalhe na fila MESADEJOGOS-->
+    <!--MODAL de detalhe na fila MESADEJOGOS-->
     <div class="modal fade" id="modal_detalhe_fila_MESADEJOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form  action="_api/api.php" method="post">
@@ -486,7 +619,7 @@ session_start();
                                 <img src="img/teste.png" class="modal_detalhe_img">
                             </li>
                             <li class="modal_fila_texto ">
-                            <h6 class="cor_braco">JOANA JOGO:<br> FIFA <br> STATUS: JOGANDO</h6>
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
                             </li>
                         </ul>
                         <div class=" d-flex justify-content-center">
@@ -498,35 +631,294 @@ session_start();
         </div>
     </div>
 
-    <!--MODAL SAIR DA FILA-->
 
-    <div class="modal fade" id="modal_sair_fila" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
+
+
+<!--________________________________________________________________________________  -->
+<!-- ________________________________Modal ativo para quando o usuario esta na fila  -->
+<!--_______________________________________________________________________________ -->
+    <!--MODAL salvar videogame1 -->
+    <div class="modal fade" id="modal_sair_fila_videogame1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
             <form  action="_api/api.php" method="post">
-                <div class="modal-content cormodal">
-                    <div class="modal-header text-center ">
-                        <h5 class="modal-title w-100 font-weight-bold modal_texto">Você tem certeza que deseja cancelar?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-content modal_tamanho_cor_sair">
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_titulo">Você tem certeza que deseja cancelar?</h5>
+                        <!-- <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
                             <img src="img/close.png"  class="modal_icone_close">
-                        </button>
+                        </button> -->
                     </div>
                     <div class="modal-body mx-3 ">
                         
-                       <h6 class="cor_braco">Suas alterações não serão salvas.</h6>
+                        <h6 class="cor_braco" id="modal_texto_h7"></h6>
+                        <button type="button" class="btn button_sair_da_fila modal_sair_fila_button" data-dismiss="modal">Calcelar</button>
+                        <button type="button" class="btn button_salvar_modal modal_sair_fila_button" >Sair</button>
                         
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                            <!-- Refazer o button -->
-                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" data-dismiss="modal">RETONAR</button>
-                        <button type="button" class="btn button_salvar modal_tamanho_botao" id="button_modal_salvar" >CANCELAR</button>
-
-
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
+    <!--MODAL de detalhe na fila videogame1 fila -->
+    <div class="modal fade" id="modal_detalhe_fila_videogame1_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--MODAL salvar videogame2 -->
+    <div class="modal fade" id="modal_sair_fila_videogame2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content modal_tamanho_cor_sair">
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_titulo">Você tem certeza que deseja cancelar?</h5>
+                        <!-- <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button> -->
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        
+                        <h6 class="cor_braco" id="modal_texto_h7"></h6>
+                        <button type="button" class="btn button_sair_da_fila modal_sair_fila_button" data-dismiss="modal">Calcelar</button>
+                        <button type="button" class="btn button_salvar_modal modal_sair_fila_button" >Sair</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL de detalhe na fila videogame2 fila  modal_detalhe_fila_FLIPERAMA_ativo-->
+    <div class="modal fade" id="modal_detalhe_fila_videogame2_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FILA VIDEOGAME 01<br> sala de descompressão</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL salvar FLIPERAMA -->
+    <div class="modal fade" id="modal_sair_fila_FLIPERAMA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content modal_tamanho_cor_sair">
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_titulo">Você tem certeza que deseja cancelar?</h5>
+                        <!-- <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button> -->
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        
+                        <h6 class="cor_braco" id="modal_texto_h7"></h6>
+                        <button type="button" class="btn button_sair_da_fila modal_sair_fila_button" data-dismiss="modal">Calcelar</button>
+                        <button type="button" class="btn button_salvar_modal modal_sair_fila_button" >Sair</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--MODAL de detalhe na fila FLIPERAMA-->
+    <div class="modal fade" id="modal_detalhe_fila_FLIPERAMA_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">FLIPERAMA<br></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--MODAL salvar MESADEJOGOS -->
+    <div class="modal fade" id="modal_sair_fila_MESADEJOGOS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content modal_tamanho_cor_sair">
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-100 font-weight-bold modal_titulo">Você tem certeza que deseja cancelar?</h5>
+                        <!-- <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button> -->
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        
+                        <h6 class="cor_braco" id="modal_texto_h7"></h6>
+                        <button type="button" class="btn button_sair_da_fila modal_sair_fila_button" data-dismiss="modal">Calcelar</button>
+                        <button type="button" class="btn button_salvar_modal modal_sair_fila_button" >Sair</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--MODAL de detalhe na fila MESADEJOGOS-->
+    <div class="modal fade" id="modal_detalhe_fila_MESADEJOGOS_ativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal ">
+                    <div class="modal-header text-center ">
+                        <h6 class="modal-title w-100 font-weight-bold modal_texto cor_braco">MESA DE JOGOS<br>sinuca | ping pong</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png" class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <ul class="modal_detalhe_ul">
+                            <li class="modal_espaco_img">
+                                <img src="img/teste.png" class="modal_detalhe_img">
+                            </li>
+                            <li class="modal_fila_texto ">
+                            <h6 class="cor_braco"> Jogando <br><b> Joana</b><br> Jogo: FIFA </h6>
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center">
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal salvar fila -->
+    <div class="modal fade" id="modal_sair_fila123" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center ">
+                        <img class="modal-title modal_salvar_fila_logo" src="img/LOGOBRANCASEMFCAMARA3.png"  alt="FIFO Logo">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/checked4.png" alt="Sucesso" class="modal_salvar_fila_img">
+                            </div>
+                                <div class="col-md-9">
+                                    <H4 class="cor_braco modal_salvar_fila_texto">Você entrou<br> na fila na<br> posição:</H4>
+                                    <H1 class="modal_salvar_fila_numero">2</H1>
+                                </div>
+                                </div>
+                                <h6 class="modal_salvar_fila_footer">Agora é só aguardar que<br> jajá é sua vez de jogar!</h6>
+                            </div>
+                        </div>
+                    <div class=" d-flex justify-content-center">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal ERRO -->
+    <div class="modal fade" id="modal_erro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form  action="_api/api.php" method="post">
+                <div class="modal-content cormodal">
+                    <div class="modal-header text-center ">
+                        <img class="modal-title modal_salvar_fila_logo" src="img/LOGOBRANCASEMFCAMARA3.png"  alt="FIFO Logo">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/close.png"  class="modal_icone_close">
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 ">
+                        <img src="img/001-close.png" alt="Erro" class="modal_erro_img">
+                        <h6 class="modal_erro_texto">Erro Erro Erro</h6>
+                    <div class=" d-flex justify-content-center">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
 
 
 

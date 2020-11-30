@@ -1,17 +1,3 @@
-/* // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
 *{
 	margin: 0px;
 	padding: 0px;
@@ -20,60 +6,45 @@
     background: linear-gradient(180deg, rgba(254, 85, 23, 0.8) 31.25%, rgba(254, 102, 46, 0.4) 91.15%),
     linear-gradient(0deg, #FE662E, #FE662E);
     width: auto;
-    height: 230px;
-    padding: 0 8% 0 8%;
+    height: 170px;
 }
 
 #img_logo{
-    position: relative;
-    width: 70%;
-    height: 60%;
-    margin: 7% 0 0 -80%; 
-}
-#headar_espacamento{
-    margin-top: 2%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-left:20%; 
 }
 
 #header_nome{
-    padding-top: 55%;
     color: #fff;
     letter-spacing: 1px;
-}
-
-.header_dropdowns{
-    background: #36357e;
-    color: #fff;
+    margin-top:70px;
+    
 }
 .dropdowns_btn{
     width: auto;
-    height: 10%;
-    margin-top: 8.5%;
+    height: auto;
     color: #fff;
-    padding-right: 8px;
+    padding-top:80px;
+    float: right;
 }
 
+.header_dropdowns{
+    background: #fff;
+    color: #FE5517;
+    margin-top: 0;
+}
 
 img#perfil{
-    position: absolute;
+    position: relative;
     width: 132.49px;
     height: 133.63px;
-    border-radius: 100%;
-    top: 16%; 
-}  
-
-
-
-.vaique{
-    color: #fff;
-    margin-left: 65%; 
-    padding-right: 5%;
-    padding-top: 10%;
-}
-
-
-
-
-
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: -110px;
+     
+    }  
 
 .button{
     background-color: #6263AB;
@@ -142,8 +113,13 @@ h6{
     color: #000;    
 } 
 .texto_fila{
-    margin: 5% 0 0 1%;
+    margin: 5% 0 3% 1%;  
 } 
+
+#texto_fila_a{
+    padding-top: 1%;
+    
+}
 .cor_prin_01_texto{
     color: #36357E;
 
@@ -163,25 +139,33 @@ h6{
     margin: 0 8% 0 8%;
 }
 
- .card_fila{
+.card_fila{
     width: 100%;
     height: auto;
     background: #D4D4D4;
     border-radius: 20px;
-    
 }
-
+.card_fila_dentro{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #30306A 7.29%, rgba(65, 64, 124, 0.9) 60.94%), #41407C;
+    border-radius: 20px;
+}
+.card_olho_icone{
+    margin: -80px 0 0 60px;
+}
 .card_img{
-    width: 119%;
-    height: auto;  
+    width: 180px;
+    height: 230px;  
     border-radius: 20px;
     margin-top: 8px;
     margin-left:8px;
     position: absolute;
 }
-#card_img_fila{
-    
-}
+.card_detalhe_icone{
+    padding: 0 0 0 86.6px;
+    margin: -23px -10px 0 0;
+    }
 
 .card_titulo{
     margin: -4% 0 0 -10%;    
@@ -238,15 +222,24 @@ h6{
     padding: 0 0 0 86.6px;
     margin: -7% -10px 0 0;
     }
-
 .card_detalhe_texto{
-    margin: -22% 0 -5% 13%;
+        margin: -63px 0 -5% 42%;
+        text-decoration: underline ;
+        color: #000;       
+    }
+.card_detalhe_texto_ativo{
+    margin: -63px 0 -5% 42%;
     text-decoration: underline ;
-    color: #000;       
+    color: #fff;       
+}
+.card_modaldetalhe{
+    padding: 0 50px 0 0;
+    margin: 50px 0 -30px 0;
 }
 
 #detalhe_texto{
     font-size: 13px;
+    margin-top: -10px;
 }
 
 .button_fila{
@@ -300,7 +293,12 @@ h6{
 }
 
 
-
+.modal_sair_fila_button{
+    width: 140px;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -309,7 +307,7 @@ h6{
 
 
 footer{
-    background-color: #121225;
+    background-color: #332F2F;
     height: auto;
     width: auto;
     padding: 4.5% 0 0 0;
@@ -328,13 +326,19 @@ footer{
     background: #36357e;
     color: #fff;
 }
+
 .modal_tamanho_cor{
     background: #36357e;
     color: #fff;
     width: 416px;
     height: 297px;
+}
 
-
+.modal_tamanho_cor_sair{
+    background: #36357e;
+    color: #fff;
+    width: 416px;
+    height: 200px;
 }
 
 .modal_fila_numero{
@@ -380,6 +384,54 @@ footer{
 .modal_espaco_img{
     padding-right: 30%;
 }
+.modal_salvar_fila_logo{
+    padding-left: 150px;
+}
+
+.modal_salvar_fila_img{
+    padding-top: 100px;
+
+}
+
+.modal_salvar_fila_texto{
+    padding-top:50px;
+    letter-spacing: 1px;
+}
+
+.modal_salvar_fila_numero{
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.modal_salvar_fila_footer{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.modal_erro_img{
+    margin-top: 20px;
+    padding-left: 140px;
+}
+
+.modal_erro_texto{
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #img_perfil_usuario{
     height: 80%;
     width: 80%;
@@ -393,6 +445,7 @@ footer{
     padding-left: 70px;
     text-align: center;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .button_alterar_foto:hover{
     color: #FE5517; 
@@ -447,12 +500,35 @@ footer{
     text-decoration:none;
     border-radius: 4px;
     text-align: center;
+
+}
+.posicao_button_salvar_modal{
     margin-top: 43px;
     margin-left: 10px;
+    margin-bottom: 25px;
     width: 150px;
     height: 40px;
 
 }
+
+.button_salvar_modal:hover{
+    background-color: #B93200;
+    color: #fff;
+    /* text-decoration:none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 43px;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px; */
+}
+
+
+
+
+
+
+
 .button_salvar:hover{
     background-color: #B93200;
     color: #fff;   
@@ -643,6 +719,43 @@ footer{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 576px) { 
     /* Pagina Editar perfil */
     .espaco_grid{
@@ -762,14 +875,14 @@ footer{
     .card_titulo{
         width: 157.59px;
         height: 50.13px; 
-        margin-left: 143.68px;
-        /* margin-top: 1px;    */
+        margin-left: 190.68px;
         font-family: 'Montserrat', sans-serif bold;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
         color: #000;
+        
     }
     #card_subtitulo{
         text-align: left;

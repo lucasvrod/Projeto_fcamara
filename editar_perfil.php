@@ -129,8 +129,8 @@ session_start();
                         
                         <h6 class="cor_braco" id="modal_texto_h7">Elas não poderão ser desfeitas.</h6>
         
-                        <button type="button" class="btn button_salvar_modal" data-dismiss="modal">RETONAR</button>
-                        <button type="button" class="btn button_salvar_modal" >SALVAR</button>
+                        <button type="button" class="btn button_salvar_modal posicao_button_salvar_modal" data-dismiss="modal">RETONAR</button>
+                        <button type="button" class="btn button_salvar_modal posicao_button_salvar_modal" >SALVAR</button>
                         
                     </div>
                 </div>
